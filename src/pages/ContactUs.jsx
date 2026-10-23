@@ -1,4 +1,3 @@
-
 import {
   ArrowRight,
   CalendarDays,
@@ -14,6 +13,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { useState } from "react";
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 const initialForm = {
   name: "",
@@ -91,10 +92,21 @@ function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (isSubmitting) return;
+
+    if (!API_URL) {
+      showToast(
+        "error",
+        "Server configuration is missing. Please try again later."
+      );
+      console.error("VITE_API_URL is not configured in the Vercel environment.");
+      return;
+    }
+
     try {
       setIsSubmitting(true);
 
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch(`${API_URL.replace(/\/+$/, "")}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -102,24 +114,28 @@ function ContactUs() {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      const data = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        throw new Error(data.message || "Failed to submit your message.");
+        throw new Error(
+          data.message || "Failed to submit your message. Please try again."
+        );
       }
 
       showToast(
         "success",
-        "Thank you! Your message has been submitted successfully."
+        data.message || "Thank you! Your message has been submitted successfully."
       );
 
-      setFormData(initialForm);
+      setFormData({ ...initialForm });
     } catch (error) {
       console.error("Contact Form Error:", error);
 
       showToast(
         "error",
-        error.message || "Something went wrong. Please try again."
+        error.message === "Failed to fetch"
+          ? "Unable to connect to the server. Please try again later."
+          : error.message || "Something went wrong. Please try again."
       );
     } finally {
       setIsSubmitting(false);
@@ -184,9 +200,7 @@ function ContactUs() {
               <Phone size={21} />
             </div>
             <div className="min-w-0">
-              <p className="text-xs font-medium text-[#718892]">
-                Call Us
-              </p>
+              <p className="text-xs font-medium text-[#718892]">Call Us</p>
               <p className="mt-1 text-sm font-bold text-[#153f4d]">
                 +92 332 9671650
               </p>
@@ -215,9 +229,7 @@ function ContactUs() {
               <Clock3 size={21} />
             </div>
             <div>
-              <p className="text-xs font-medium text-[#718892]">
-                Clinic Hours
-              </p>
+              <p className="text-xs font-medium text-[#718892]">Clinic Hours</p>
               <p className="mt-1 text-sm font-bold text-[#153f4d]">
                 Mon–Sat, 10 AM–2 PM
               </p>
@@ -724,6 +736,7 @@ function ContactUs() {
         <div className="fixed right-4 top-24 z-[200] w-[calc(100%-2rem)] max-w-[390px] sm:right-6">
           <div
             role="status"
+            aria-live="polite"
             className={`flex items-start gap-3 rounded-2xl border bg-white px-5 py-4 shadow-[0_15px_45px_rgba(17,63,78,0.18)] ${
               toast.type === "success"
                 ? "border-[#b9dfcf]"
