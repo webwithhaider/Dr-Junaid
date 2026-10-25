@@ -25,7 +25,7 @@ function DoctorProfile() {
     {
       title: "Medical Education",
       detail:
-        "Medical qualifications and academic background of Dr. Junaid Murtaza.",
+        "Medical qualifications and academic background of Dr. Junaid Mustafa.",
     },
     {
       title: "Clinical Experience",
@@ -62,7 +62,7 @@ function DoctorProfile() {
             </div>
 
             <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              Dr. Junaid Murtaza
+              Dr. Junaid Mustafa
             </h1>
 
             <p className="mt-4 text-xl font-semibold text-[#087f80]">
