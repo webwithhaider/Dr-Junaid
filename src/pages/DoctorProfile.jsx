@@ -41,10 +41,10 @@ function DoctorProfile() {
 
   return (
     <main className="min-h-screen bg-[#f3f9f7] text-[#173f3e]">
-      
+
       <div className="h-[104px]" />
 
-      
+
       <section className="overflow-hidden bg-white">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-12 sm:px-8 md:grid-cols-2 md:py-20">
           <div>
@@ -119,7 +119,7 @@ function DoctorProfile() {
         </div>
       </section>
 
-      
+
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-20">
         <div className="grid gap-8 md:grid-cols-[1.5fr_1fr]">
           <div className="rounded-3xl border border-[#e1eee8] bg-white p-7 shadow-sm sm:p-10">
@@ -131,25 +131,38 @@ function DoctorProfile() {
               Professional Biography
             </h2>
 
-            <p className="mt-5 leading-8 text-gray-600">
-              Dr. Junaid Mustafa
-MBBS, FCPS (Medicine), FPSIM
-Consultant Physician & Endoscopist
+            <div className="mt-5 space-y-4 leading-8 text-gray-600">
+  <div>
+    <p className="font-semibold text-[#173f3e]">Dr. Junaid Mustafa</p>
+    <p>MBBS, FCPS (Medicine), FPSIM</p>
+    <p>Consultant Physician & Endoscopist</p>
+  </div>
 
-Dr. Junaid Mustafa is a Consultant Physician and Endoscopist at Islamabad Diagnostic Centre (IDC), Rahim Yar Khan. His clinical interests include diabetes, obesity, fatty liver disease (MASLD), and metabolic health. He is committed to providing evidence-based medical care, personalized treatment plans, and lifestyle guidance to help patients improve their health and quality of life.
+  <p>
+    Dr. Junaid Mustafa is a Consultant Physician and Endoscopist at Islamabad
+    Diagnostic Centre (IDC), Rahim Yar Khan. His clinical interests include
+    diabetes, obesity, fatty liver disease (MASLD), and metabolic health. He is
+    committed to providing evidence-based medical care, personalized treatment
+    plans, and lifestyle guidance to help patients improve their health and
+    quality of life.
+  </p>
 
-Areas of Special Interest
+  <div>
+    <h3 className="font-bold text-[#173f3e]">Areas of Special Interest</h3>
+    <ul className="mt-2 list-disc space-y-1 pl-6 marker:text-[#087f80]">
+      <li>Diabetes and its complications</li>
+      <li>Obesity and weight management</li>
+      <li>Fatty liver disease (MASLD)</li>
+      <li>Metabolic health</li>
+      <li>Gastrointestinal diseases and upper GI endoscopy</li>
+    </ul>
+  </div>
 
-* Diabetes and its complications
-* Obesity and weight management
-* Fatty liver disease (MASLD)
-* Metabolic health
-* Gastrointestinal diseases and upper GI endoscopy 
-            </p>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              Clinic: Islamabad Diagnostic Centre (IDC), Hospital Road, Rahim Yar Khan
-            </p>
+  <p>
+    <span className="font-semibold text-[#173f3e]">Clinic:</span> Islamabad
+    Diagnostic Centre (IDC), Hospital Road, Rahim Yar Khan
+  </p>
+</div>
           </div>
 
           <div className="rounded-3xl bg-[#173f3e] p-7 text-white sm:p-9">
@@ -198,7 +211,7 @@ Areas of Special Interest
                   <p className="text-sm text-white/65">Consultation Hours</p>
                   <p className="mt-1 font-semibold">
                     10:30 AM – 1:30 PM
-Friday & Sunday: Closed
+                    Friday & Sunday: Closed
                   </p>
                 </div>
               </div>
@@ -207,7 +220,7 @@ Friday & Sunday: Closed
         </div>
       </section>
 
-     
+
       <section className="bg-white py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#087f80]">
@@ -244,7 +257,7 @@ Friday & Sunday: Closed
         </div>
       </section>
 
-    
+
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-20">
         <div className="text-center">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#087f80]">
@@ -277,7 +290,7 @@ Friday & Sunday: Closed
         </div>
       </section>
 
-     
+
       <section className="px-5 pb-16 sm:px-8 md:pb-20">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-7 rounded-3xl bg-[#087f80] p-8 text-white sm:p-12 md:flex-row md:items-center">
           <div>
