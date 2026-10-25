@@ -132,12 +132,23 @@ function DoctorProfile() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-600">
-              Dr. Junaid Mustafa is Obesity, Fatty liver and Diabetes Expert. 
+              Dr. Junaid Mustafa
+MBBS, FCPS (Medicine), FPSIM
+Consultant Physician & Endoscopist
+
+Dr. Junaid Mustafa is a Consultant Physician and Endoscopist at Islamabad Diagnostic Centre (IDC), Rahim Yar Khan. His clinical interests include diabetes, obesity, fatty liver disease (MASLD), and metabolic health. He is committed to providing evidence-based medical care, personalized treatment plans, and lifestyle guidance to help patients improve their health and quality of life.
+
+Areas of Special Interest
+
+* Diabetes and its complications
+* Obesity and weight management
+* Fatty liver disease (MASLD)
+* Metabolic health
+* Gastrointestinal diseases and upper GI endoscopy 
             </p>
 
             <p className="mt-4 leading-8 text-gray-600">
-              For details about available services, consultation fees and
-              appointment timings, please contact the clinic.
+              Clinic: Islamabad Diagnostic Centre (IDC), Hospital Road, Rahim Yar Khan
             </p>
           </div>
 
@@ -151,7 +162,7 @@ function DoctorProfile() {
                 </div>
                 <div>
                   <p className="text-sm text-white/65">Profession</p>
-                  <p className="mt-1 font-semibold">Medical Doctor</p>
+                  <p className="mt-1 font-semibold">Consultant Physician, Diabetologist & Obesity Specialist.</p>
                 </div>
               </div>
 
@@ -162,7 +173,7 @@ function DoctorProfile() {
                 <div>
                   <p className="text-sm text-white/65">Qualifications</p>
                   <p className="mt-1 font-semibold">
-                    Contact clinic for details
+                    MBBS, FCPS (Medicine), FPSIM, IDF FELLOW
                   </p>
                 </div>
               </div>
@@ -174,7 +185,7 @@ function DoctorProfile() {
                 <div>
                   <p className="text-sm text-white/65">Clinic Location</p>
                   <p className="mt-1 font-semibold">
-                    Confirm with the clinic
+                    Islamabad Diagnostic Centre (IDC), sheikh zayed Hospital Road, Rahim Yar Khan, Pakistan
                   </p>
                 </div>
               </div>
@@ -186,7 +197,8 @@ function DoctorProfile() {
                 <div>
                   <p className="text-sm text-white/65">Consultation Hours</p>
                   <p className="mt-1 font-semibold">
-                    Confirm availability
+                    10:30 AM – 1:30 PM
+Friday & Sunday: Closed
                   </p>
                 </div>
               </div>
