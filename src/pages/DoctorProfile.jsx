@@ -245,7 +245,7 @@ function DoctorProfile() {
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-gray-600">
             Contact the clinic to confirm the services currently offered by
-            Dr. Junaid Murtaza.
+            Dr. Junaid Mustafa.
           </p>
         </div>
 
@@ -275,7 +275,7 @@ function DoctorProfile() {
 
             <p className="mt-3 max-w-2xl leading-7 text-white/85">
               Contact the clinic to request an appointment with Dr. Junaid
-              Murtaza.
+              Mustafa.
             </p>
           </div>
 
