@@ -109,7 +109,7 @@ function DoctorProfile() {
 
             <div className="absolute bottom-5 left-4 right-4 rounded-2xl border border-white bg-white/95 p-5 shadow-lg">
               <p className="font-bold text-[#173f3e]">
-                Dr. Junaid Murtaza
+                Dr. Junaid Mustafa
               </p>
               <p className="mt-1 text-sm text-gray-600">
                 Medical Doctor
@@ -132,9 +132,7 @@ function DoctorProfile() {
             </h2>
 
             <p className="mt-5 leading-8 text-gray-600">
-              This section contains the professional biography of Dr. Junaid
-              Murtaza. Add his verified medical background, clinical
-              experience, qualifications and approach to patient care here.
+              Dr. Junaid Mustafa is Obesity, Fatty liver and Diabetes Expert. 
             </p>
 
             <p className="mt-4 leading-8 text-gray-600">
