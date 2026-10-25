@@ -132,37 +132,37 @@ function DoctorProfile() {
             </h2>
 
             <div className="mt-5 space-y-4 leading-8 text-gray-600">
-  <div>
-    <p className="font-semibold text-[#173f3e]">Dr. Junaid Mustafa</p>
-    <p>MBBS, FCPS (Medicine), FPSIM</p>
-    <p>Consultant Physician & Endoscopist</p>
-  </div>
+              <div>
+                <p className="font-semibold text-[#173f3e]">Dr. Junaid Mustafa</p>
+                <p>MBBS, FCPS (Medicine), FPSIM</p>
+                <p>Consultant Physician & Endoscopist</p>
+              </div>
 
-  <p>
-    Dr. Junaid Mustafa is a Consultant Physician and Endoscopist at Islamabad
-    Diagnostic Centre (IDC), Rahim Yar Khan. His clinical interests include
-    diabetes, obesity, fatty liver disease (MASLD), and metabolic health. He is
-    committed to providing evidence-based medical care, personalized treatment
-    plans, and lifestyle guidance to help patients improve their health and
-    quality of life.
-  </p>
+              <p>
+                Dr. Junaid Mustafa is a Consultant Physician and Endoscopist at Islamabad
+                Diagnostic Centre (IDC), Rahim Yar Khan. His clinical interests include
+                diabetes, obesity, fatty liver disease (MASLD), and metabolic health. He is
+                committed to providing evidence-based medical care, personalized treatment
+                plans, and lifestyle guidance to help patients improve their health and
+                quality of life.
+              </p>
 
-  <div>
-    <h3 className="font-bold text-[#173f3e]">Areas of Special Interest</h3>
-    <ul className="mt-2 list-disc space-y-1 pl-6 marker:text-[#087f80]">
-      <li>Diabetes and its complications</li>
-      <li>Obesity and weight management</li>
-      <li>Fatty liver disease (MASLD)</li>
-      <li>Metabolic health</li>
-      <li>Gastrointestinal diseases and upper GI endoscopy</li>
-    </ul>
-  </div>
+              <div>
+                <h3 className="font-bold text-[#173f3e]">Areas of Special Interest</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-6 marker:text-[#087f80]">
+                  <li>Diabetes and its complications</li>
+                  <li>Obesity and weight management</li>
+                  <li>Fatty liver disease (MASLD)</li>
+                  <li>Metabolic health</li>
+                  <li>Gastrointestinal diseases and upper GI endoscopy</li>
+                </ul>
+              </div>
 
-  <p>
-    <span className="font-semibold text-[#173f3e]">Clinic:</span> Islamabad
-    Diagnostic Centre (IDC), Hospital Road, Rahim Yar Khan
-  </p>
-</div>
+              <p>
+                <span className="font-semibold text-[#173f3e]">Clinic:</span> Islamabad
+                Diagnostic Centre (IDC), Hospital Road, Rahim Yar Khan
+              </p>
+            </div>
           </div>
 
           <div className="rounded-3xl bg-[#173f3e] p-7 text-white sm:p-9">
@@ -215,6 +215,31 @@ function DoctorProfile() {
                   </p>
                 </div>
               </div>
+
+              <div className="flex gap-4">
+                <div className="rounded-xl bg-white/10 p-3">
+                  <MapPin size={22} />
+                </div>
+                <div>
+                  <p className="text-sm text-white/65">Specialty / Areas of Interest</p>
+                  <p className="mt-1 font-semibold">
+                    Diabetes, Obesity, Fatty Liver (MASLD), and Metabolic Health
+                  </p>
+                </div>
+              </div>
+
+<div className="flex gap-4">
+                <div className="rounded-xl bg-white/10 p-3">
+                  <MapPin size={22} />
+                </div>
+                <div>
+                  <p className="text-sm text-white/65">Appointment Information</p>
+                  <p className="mt-1 font-semibold">
+                    Please contact IDC Rahim Yar Khan to confirm availability and book an appointment.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -261,7 +286,7 @@ function DoctorProfile() {
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-20">
         <div className="text-center">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#087f80]">
-            Areas of Focus
+            Diabetes, Obesity, Fatty Liver (MASLD), and Metabolic Health
           </p>
 
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
@@ -269,8 +294,7 @@ function DoctorProfile() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-gray-600">
-            Contact the clinic to confirm the services currently offered by
-            Dr. Junaid Mustafa.
+           Please contact IDC Rahim Yar Khan to confirm availability and book an appointment.
           </p>
         </div>
 
@@ -299,8 +323,7 @@ function DoctorProfile() {
             </h2>
 
             <p className="mt-3 max-w-2xl leading-7 text-white/85">
-              Contact the clinic to request an appointment with Dr. Junaid
-              Mustafa.
+              Please contact IDC Rahim Yar Khan to confirm availability and book an appointment.
             </p>
           </div>
 
