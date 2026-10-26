@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { Menu, X, Phone, ChevronDown, Calculator } from "lucide-react";
+import {
+  Menu,
+  X,
+  Phone,
+  ChevronDown,
+  Calculator,
+} from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 
@@ -30,6 +36,10 @@ function Navbar() {
       name: "Daily Calorie Needs",
       path: "/health-tools/daily-calorie-calculator",
     },
+    {
+      name: "Weight Loss Journey",
+      path: "/health-tools/weight-loss-journey",
+    },
   ];
 
   const closeMenu = () => {
@@ -39,7 +49,9 @@ function Navbar() {
 
   const linkClass = ({ isActive }) =>
     `whitespace-nowrap text-[14px] font-medium transition-colors duration-200 ${
-      isActive ? "text-[#087F8C]" : "text-slate-700 hover:text-[#087F8C]"
+      isActive
+        ? "text-[#087F8C]"
+        : "text-slate-700 hover:text-[#087F8C]"
     }`;
 
   return (
@@ -61,12 +73,14 @@ function Navbar() {
               <span className="block whitespace-nowrap text-[15px] font-bold leading-tight tracking-[-0.4px] text-slate-900 sm:text-[17px]">
                 Dr. Junaid Mustafa
               </span>
+
               <span className="mt-1 block whitespace-nowrap text-[10px] font-medium tracking-wide text-slate-500 sm:text-[11px]">
                 MBBS, FCPS (Medicine)
               </span>
             </span>
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden items-center gap-5 lg:flex xl:gap-6">
             {navLinks.slice(0, 4).map((link) => (
               <NavLink
@@ -79,6 +93,7 @@ function Navbar() {
               </NavLink>
             ))}
 
+            {/* Health Tools Dropdown */}
             <div
               className="relative"
               onMouseEnter={() => setHealthOpen(true)}
@@ -95,7 +110,9 @@ function Navbar() {
 
                 <button
                   type="button"
-                  onClick={() => setHealthOpen((prev) => !prev)}
+                  onClick={() =>
+                    setHealthOpen((prev) => !prev)
+                  }
                   aria-label="Open health tools menu"
                   aria-expanded={healthOpen}
                   className="text-slate-700 transition hover:text-[#087F8C]"
@@ -129,7 +146,11 @@ function Navbar() {
             </div>
 
             {navLinks.slice(4).map((link) => (
-              <NavLink key={link.name} to={link.path} className={linkClass}>
+              <NavLink
+                key={link.name}
+                to={link.path}
+                className={linkClass}
+              >
                 {link.name}
               </NavLink>
             ))}
@@ -144,6 +165,7 @@ function Navbar() {
             <span>+92 332 9671650</span>
           </a>
 
+          {/* Mobile Menu Button */}
           <button
             type="button"
             onClick={() => {
@@ -151,13 +173,16 @@ function Navbar() {
               setHealthOpen(false);
             }}
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-slate-200 text-slate-700 transition hover:bg-teal-50 lg:hidden"
-            aria-label={isOpen ? "Close navigation" : "Open navigation"}
+            aria-label={
+              isOpen ? "Close navigation" : "Open navigation"
+            }
             aria-expanded={isOpen}
           >
             {isOpen ? <X size={23} /> : <Menu size={23} />}
           </button>
         </div>
 
+        {/* Mobile Navigation */}
         {isOpen && (
           <div className="max-h-[75vh] overflow-y-auto border-t border-slate-100 bg-white py-3 lg:hidden">
             <div className="flex flex-col">
@@ -184,8 +209,11 @@ function Navbar() {
 
                   <button
                     type="button"
-                    onClick={() => setHealthOpen((prev) => !prev)}
+                    onClick={() =>
+                      setHealthOpen((prev) => !prev)
+                    }
                     aria-label="Toggle health tools"
+                    aria-expanded={healthOpen}
                   >
                     <ChevronDown
                       size={17}

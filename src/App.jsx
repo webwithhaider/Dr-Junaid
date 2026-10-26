@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import {
   BrowserRouter,
@@ -18,13 +17,15 @@ import InClinicFacilities from "./components/InClinicFacilities";
 import Specialties from "./pages/Specialties";
 import Doctors from "./pages/Doctors";
 import Blog from "./pages/Blog";
+import BlogArticle from "./pages/BlogArticle";
 import ContactUs from "./pages/ContactUs";
 import FAQs from "./pages/FAQs";
 import DoctorProfile from "./pages/DoctorProfile";
-import Screen from "./pages/Screen";
+
 import BMICalculator from "./pages/BMICalculator";
 import DailyCalorieCalculator from "./pages/DailyCalorieCalculator";
 import IdealBodyWeightCalculator from "./pages/IdealBodyWeightCalculator";
+import WeightLossJourney from "./pages/WeightLossJourney";
 
 function ScrollToSection() {
   const { pathname, hash } = useLocation();
@@ -35,7 +36,6 @@ function ScrollToSection() {
         top: 0,
         behavior: "smooth",
       });
-
       return;
     }
 
@@ -51,7 +51,6 @@ function ScrollToSection() {
           behavior: "smooth",
           block: "start",
         });
-
         return;
       }
 
@@ -75,25 +74,20 @@ function Home() {
     <>
       <div className="h-[104px]" />
 
-      {/* Doctor Hero */}
       <DoctorHero />
 
-      {/* Doctor Biography and Services */}
       <div id="services" className="scroll-mt-28">
         <DoctorBiography />
       </div>
 
-      {/* In-Clinic Facilities */}
       <div className="scroll-mt-28">
         <InClinicFacilities />
       </div>
 
-      {/* Blog / Health Insights */}
       <div id="blog" className="scroll-mt-28">
         <RelatedArticles />
       </div>
 
-      {/* FAQs */}
       <div id="faqs" className="scroll-mt-28">
         <FAQs />
       </div>
@@ -126,70 +120,45 @@ function App() {
 
       <main>
         <Routes>
-          {/* Home Page */}
           <Route path="/" element={<Home />} />
 
-          {/* Specialties */}
-          <Route
-            path="/specialties"
-            element={<Specialties />}
-          />
+          <Route path="/specialties" element={<Specialties />} />
 
-          {/* Doctor Details */}
           <Route
             path="/doctor-details/dr-junaid-murtaza/en"
             element={<DoctorDetails />}
           />
 
-          {/* NEW: Dr. Junaid Murtaza Profile */}
-          <Route
-            path="/doctor-profile"
-            element={<DoctorProfile />}
-          />
+          <Route path="/doctor-profile" element={<DoctorProfile />} />
 
-          {/* Doctors Listing */}
-          <Route
-            path="/doctors"
-            element={<Doctors />}
-          />
+          <Route path="/doctors" element={<Doctors />} />
 
-          {/* Blog */}
-          <Route
-            path="/blog"
-            element={<Blog />}
-          />
+          <Route path="/blog" element={<Blog />} />
 
-          {/* FAQs */}
-          <Route
-            path="/faqs"
-            element={<FAQs />}
-          />
-          <Route
-            path="/screen"
-            element={<Screen />}
-          />
-          {/* Contact Us */}
-          <Route
-            path="/contact-us"
-            element={<ContactUs />}
-          />
-          
-          {/* BMI Calculator */}
+          <Route path="/blog/:slug" element={<BlogArticle />} />
+
+          <Route path="/faqs" element={<FAQs />} />
+
+          <Route path="/contact-us" element={<ContactUs />} />
+
           <Route
             path="/health-tools/bmi-calculator"
             element={<BMICalculator />}
           />
 
-          {/* Daily Calorie Calculator */}
           <Route
             path="/health-tools/daily-calorie-calculator"
             element={<DailyCalorieCalculator />}
           />
 
-          {/* Ideal Body Weight Calculator */}
           <Route
             path="/health-tools/ideal-body-weight-calculator"
             element={<IdealBodyWeightCalculator />}
+          />
+
+          <Route
+            path="/health-tools/weight-loss-journey"
+            element={<WeightLossJourney />}
           />
         </Routes>
       </main>

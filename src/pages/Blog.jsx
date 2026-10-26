@@ -1,4 +1,5 @@
 import { ArrowRight, BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const articles = [
   {
@@ -12,19 +13,20 @@ const articles = [
       "فیٹی لیور ایسی کیفیت ہے جس میں جگر میں چربی جمع ہونے لگتی ہے۔ اس کا تعلق وزن میں اضافے اور ذیابیطس سے ہو سکتا ہے۔",
     image:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85",
-    link: "#",
+    link: "/blog/fatty-liver-masld",
   },
   {
     category: "DIABETES",
     urduCategory: "ذیابیطس",
     title: "Habits That Help Control Blood Sugar",
     urduTitle: "بلڈ شوگر کنٹرول کرنے والی عادات",
-    description: "Small daily habits make a big difference in diabetes care.",
+    description:
+      "Small daily habits make a big difference in diabetes care.",
     urduDescription:
       "روزمرہ کی چھوٹی چھوٹی اچھی عادات ذیابیطس کو سنبھالنے اور صحت بہتر رکھنے میں مدد دے سکتی ہیں۔",
     image:
       "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=85",
-    link: "#",
+    link: "/blog/control-blood-sugar",
   },
   {
     category: "DIGESTIVE HEALTH",
@@ -37,7 +39,7 @@ const articles = [
       "کبھی کبھار گیس ہونا عام بات ہے، لیکن بعض علامات کی صورت میں ڈاکٹر سے جلد معائنہ کروانا ضروری ہو سکتا ہے۔",
     image:
       "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=85",
-    link: "#",
+    link: "/blog/gas-and-bloating",
   },
 ];
 
@@ -56,6 +58,7 @@ function UrduText({ children, className = "" }) {
 function Blog() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f5f9fa] pt-[104px] text-[#173b49]">
+      {/* HERO SECTION */}
       <section className="relative overflow-hidden bg-[#123f50]">
         <div className="pointer-events-none absolute -right-20 -top-24 h-80 w-80 rounded-full border border-white/10" />
         <div className="pointer-events-none absolute -right-5 -top-10 h-60 w-60 rounded-full border border-white/10" />
@@ -79,7 +82,9 @@ function Blog() {
 
               <h1 className="mt-5 max-w-2xl text-3xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
                 Simple Guidance.
-                <span className="block text-[#f0c94b]">Better Health.</span>
+                <span className="block text-[#f0c94b]">
+                  Better Health.
+                </span>
               </h1>
 
               <UrduText className="mt-4 max-w-2xl text-2xl font-medium leading-[2.1] text-[#f0c94b] sm:text-3xl">
@@ -145,6 +150,7 @@ function Blog() {
         </div>
       </section>
 
+      {/* HEALTH ARTICLES */}
       <section
         id="health-articles"
         className="scroll-mt-28 py-14 sm:py-20 lg:py-24"
@@ -194,11 +200,9 @@ function Blog() {
                 key={article.title}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#e0e9e9] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#b8d9d7] hover:shadow-xl"
               >
-                <a
-                  href={article.link}
-                  onClick={(event) => {
-                    if (article.link === "#") event.preventDefault();
-                  }}
+                {/* Clickable image */}
+                <Link
+                  to={article.link}
                   aria-label={article.title}
                   className="relative block h-48 overflow-hidden bg-[#e5eeee] sm:h-56"
                 >
@@ -228,19 +232,25 @@ function Blog() {
                       {article.urduCategory}
                     </span>
                   </div>
-                </a>
+                </Link>
 
                 <div className="flex flex-1 flex-col p-5 sm:p-7">
                   <span className="text-xs font-semibold text-[#218487]">
                     Article 0{index + 1}
                   </span>
 
+                  {/* Clickable English title */}
                   <h3 className="mt-3 text-lg font-bold leading-7 text-[#173b49] transition-colors group-hover:text-[#218487] sm:text-xl">
-                    {article.title}
+                    <Link to={article.link}>
+                      {article.title}
+                    </Link>
                   </h3>
 
+                  {/* Clickable Urdu title */}
                   <UrduText className="mt-2 text-lg font-medium leading-[2.1] text-[#218487]">
-                    {article.urduTitle}
+                    <Link to={article.link}>
+                      {article.urduTitle}
+                    </Link>
                   </UrduText>
 
                   <p className="mt-3 text-sm leading-7 text-[#687b84]">
@@ -252,11 +262,8 @@ function Blog() {
                   </UrduText>
 
                   <div className="mt-auto border-t border-[#e8eeee] pt-5">
-                    <a
-                      href={article.link}
-                      onClick={(event) => {
-                        if (article.link === "#") event.preventDefault();
-                      }}
+                    <Link
+                      to={article.link}
                       className="inline-flex min-h-10 flex-wrap items-center gap-2 text-sm font-bold text-[#197b7e] transition-all hover:gap-3"
                     >
                       <span>Read more</span>
@@ -269,13 +276,14 @@ function Blog() {
                       >
                         مزید پڑھیں
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
             ))}
           </div>
 
+          {/* CONSULTATION SECTION */}
           <div className="mt-10 flex flex-col gap-5 rounded-2xl border border-[#dce9e9] bg-white p-5 sm:mt-12 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="min-w-0">
               <p className="text-xs font-bold uppercase tracking-[2px] text-[#218487]">
@@ -303,8 +311,8 @@ function Blog() {
               </UrduText>
             </div>
 
-            <a
-              href="/#appointment"
+            <Link
+              to="/contact-us"
               className="inline-flex min-h-12 w-full shrink-0 flex-wrap items-center justify-center gap-3 rounded-lg bg-[#173f50] px-5 py-4 text-sm font-bold text-white transition hover:bg-[#218487] sm:w-auto sm:px-6"
             >
               <span>Book Consultation</span>
@@ -312,9 +320,10 @@ function Blog() {
               <span lang="ur" dir="rtl" style={urduFont} className="text-sm">
                 وقت لیں
               </span>
-            </a>
+            </Link>
           </div>
 
+          {/* MEDICAL DISCLAIMER */}
           <div className="mt-6 border-l-2 border-[#b8d9d7] pl-4">
             <p className="text-xs leading-6 text-[#819198] sm:text-sm">
               Health articles are for general information and do not replace

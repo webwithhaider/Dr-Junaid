@@ -62,8 +62,19 @@ function FAQs() {
 
   return (
     <>
+      {/* Navbar spacing */}
       <div className="h-[104px]" />
 
+      {/* Full-width banner image - before FAQs */}
+      <section className="w-full overflow-hidden bg-white">
+        <img
+          src="/faqs-hero.png"
+          alt="Dr. Junaid Mustafa - Medical Clinic"
+          className="block h-[220px] w-full object-cover object-center sm:h-[340px] lg:h-[480px]"
+        />
+      </section>
+
+      {/* Existing FAQs Section */}
       <main className="min-h-[70vh] bg-[#F2F6F8] px-4 py-12 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-[850px]">
           {/* Heading */}
