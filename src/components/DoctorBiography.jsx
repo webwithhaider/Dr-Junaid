@@ -472,17 +472,16 @@ function DoctorBiography() {
                     />
                     <div>
                       <p className="font-bold text-[#173f3e]">
-                        MBBS, FCPS (Medicine)
+                        MBBS, FCPS (Medicine),FPSIM, IDF FELLOW
                       </p>
                       <p className="mt-2 text-sm leading-6 text-gray-600">
-                        Consultant physician qualifications as provided for Dr.
-                        Junaid Mustafa.
+                        American DiabetesAssociation (ADA) PROFESSIONAL MEMBER
                       </p>
                     </div>
                   </div>
                   <p className="mt-4 text-xs leading-5 text-gray-500">
-                    Additional qualification details can be added once verified
-                    by the clinic.
+                    Member of the American Association of
+Clinical Endocrinology (AACE)
                   </p>
                 </div>
               )}
@@ -783,7 +782,7 @@ function DoctorBiography() {
               </span>
 
               <h2 className="mt-3 text-2xl font-extrabold">
-                Dr. Junaid Mustafa Metabolic Clinic
+                Al Murtaza Hospital
               </h2>
 
               <div className="mt-6 flex items-start gap-3">
@@ -804,7 +803,7 @@ function DoctorBiography() {
               </div>
 
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Shahi+Road+Sadiqabad+Punjab+64350+Pakistan"
+                href="https://maps.app.goo.gl/biwB2irEpnuz9Er98?g_st=ic"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#f2cb68] px-5 py-3 text-sm font-bold text-[#173f3e] transition hover:bg-white"
@@ -872,7 +871,8 @@ function DoctorBiography() {
               </div>
 
               <p className="mt-4 text-sm text-gray-600">
-                Monday–Saturday, 10:00 AM–2:00 PM
+                Monday–Saturday, Daily 10:30 am till 1:30 pm
+                Friday Sunday OFF
               </p>
             </div>
           </div>

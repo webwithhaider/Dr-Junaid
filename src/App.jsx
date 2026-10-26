@@ -21,7 +21,7 @@ import Blog from "./pages/Blog";
 import ContactUs from "./pages/ContactUs";
 import FAQs from "./pages/FAQs";
 import DoctorProfile from "./pages/DoctorProfile";
-
+import Screen from "./pages/Screen";
 import BMICalculator from "./pages/BMICalculator";
 import DailyCalorieCalculator from "./pages/DailyCalorieCalculator";
 import IdealBodyWeightCalculator from "./pages/IdealBodyWeightCalculator";
@@ -164,13 +164,16 @@ function App() {
             path="/faqs"
             element={<FAQs />}
           />
-
+          <Route
+            path="/screen"
+            element={<Screen />}
+          />
           {/* Contact Us */}
           <Route
             path="/contact-us"
             element={<ContactUs />}
           />
-
+          
           {/* BMI Calculator */}
           <Route
             path="/health-tools/bmi-calculator"
