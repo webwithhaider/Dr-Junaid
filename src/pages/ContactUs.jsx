@@ -232,7 +232,7 @@ function ContactUs() {
             <div>
               <p className="text-xs font-medium text-[#718892]">Clinic Hours</p>
               <p className="mt-1 text-sm font-bold text-[#153f4d]">
-                Mon–Sat, 10:30 AM–1:30 PM
+                Mon–Sat, FRI-SUN Closed, 10:30 AM–1:30 PM
               </p>
             </div>
           </div>
