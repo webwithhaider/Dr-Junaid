@@ -13,13 +13,15 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [healthOpen, setHealthOpen] = useState(false);
 
+  const whatsappLink = "https://wa.me/923329671650";
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/#services" },
     { name: "Doctor", path: "/#doctor" },
     { name: "Blog", path: "/#blog" },
     { name: "Reviews", path: "/#reviews" },
-    { name: "Contact Us", path: "/#clinics" },
+    { name: "Contact Us", path: "/contact-us" },
     { name: "FAQs", path: "/#faqs" },
   ];
 
@@ -58,6 +60,7 @@ function Navbar() {
     <header className="fixed inset-x-0 top-0 z-[100] border-b border-slate-200/80 bg-white/95 shadow-[0_4px_24px_rgba(15,40,50,0.06)] backdrop-blur-xl">
       <nav className="mx-auto max-w-[1440px] px-4 sm:px-6 xl:px-10">
         <div className="flex min-h-[88px] items-center justify-between gap-5">
+          {/* Logo and Doctor Name */}
           <Link
             to="/"
             onClick={closeMenu}
@@ -156,9 +159,12 @@ function Navbar() {
             ))}
           </div>
 
-          {/* Phone */}
+          {/* Desktop WhatsApp Button */}
           <a
-            href="tel:+923329671650"
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat with us on WhatsApp"
             className="hidden shrink-0 items-center gap-2 rounded-lg bg-[#087F8C] px-4 py-3 text-sm font-semibold text-white shadow-md shadow-teal-900/10 transition hover:bg-[#066975] xl:flex"
           >
             <Phone size={17} />
@@ -197,6 +203,7 @@ function Navbar() {
                 </Link>
               ))}
 
+              {/* Mobile Health Tools Dropdown */}
               <div className="border-b border-slate-100">
                 <div className="flex items-center justify-between px-3 py-3.5">
                   <Link
@@ -214,6 +221,7 @@ function Navbar() {
                     }
                     aria-label="Toggle health tools"
                     aria-expanded={healthOpen}
+                    className="text-slate-700 hover:text-[#087F8C]"
                   >
                     <ChevronDown
                       size={17}
@@ -252,9 +260,13 @@ function Navbar() {
                 </Link>
               ))}
 
+              {/* Mobile WhatsApp Button */}
               <a
-                href="tel:+923329671650"
-                className="mx-3 mt-4 flex items-center justify-center gap-2 rounded-lg bg-[#087F8C] px-4 py-3.5 text-sm font-semibold text-white"
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with us on WhatsApp"
+                className="mx-3 mt-4 flex items-center justify-center gap-2 rounded-lg bg-[#087F8C] px-4 py-3.5 text-sm font-semibold text-white transition hover:bg-[#066975]"
               >
                 <Phone size={17} />
                 +92 332 9671650

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -66,7 +65,7 @@ function DoctorProfile() {
             </h1>
 
             <p className="mt-4 text-xl font-semibold text-[#087f80]">
-              Medical Doctor
+              CONSULTANT PHYSICIAN & DIABETOLOGIST
             </p>
 
             <p className="mt-5 max-w-xl leading-8 text-gray-600">
@@ -112,7 +111,7 @@ function DoctorProfile() {
                 Dr. Junaid Mustafa
               </p>
               <p className="mt-1 text-sm text-gray-600">
-                Medical Doctor
+                CONSULTANT PHYSICIAN & DIABETOLOGIST
               </p>
             </div>
           </div>
@@ -170,7 +169,7 @@ function DoctorProfile() {
 
             <div className="mt-7 space-y-6">
               <div className="flex gap-4">
-                <div className="rounded-xl bg-white/10 p-3">
+                <div className="rounded-xl bg-white/10 p-3 align-center flex items-center justify-center">
                   <Stethoscope size={22} />
                 </div>
                 <div>
@@ -180,7 +179,7 @@ function DoctorProfile() {
               </div>
 
               <div className="flex gap-4">
-                <div className="rounded-xl bg-white/10 p-3">
+                <div className="rounded-xl bg-white/10 p-3 align-baseline flex items-center justify-center">
                   <GraduationCap size={22} />
                 </div>
                 <div>
@@ -192,20 +191,20 @@ function DoctorProfile() {
               </div>
 
               <div className="flex gap-4">
-                <div className="rounded-xl bg-white/10 p-3">
+                <div className="rounded-xl bg-white/10 p-3 align-baseline flex items-center justify-center">
                   <MapPin size={22} />
                 </div>
                 <div>
                   <p className="text-sm text-white/65">Clinic Location</p>
                   <p className="mt-1 font-semibold">
-                    Islamabad Diagnostic Centre (IDC), sheikh zayed Hospital Road, Rahim Yar Khan, Pakistan
+                    Islamabad Diagnostic Centre (IDC), Sheikh Zayed Hospital Road, Rahim Yar Khan, Pakistan
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="rounded-xl bg-white/10 p-3">
-                  <Clock3 size={22} />
+                <div className="rounded-xl bg-white/10 p-3 align-baseline flex items-center justify-center">
+                  <Clock3 size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-white/65">Consultation Hours</p>
@@ -217,7 +216,7 @@ function DoctorProfile() {
               </div>
 
               <div className="flex gap-4">
-                <div className="rounded-xl bg-white/10 p-3">
+                <div className="rounded-xl bg-white/10 p-3 align-baseline flex items-center justify-center">
                   <MapPin size={22} />
                 </div>
                 <div>
@@ -229,13 +228,15 @@ function DoctorProfile() {
               </div>
 
 <div className="flex gap-4">
-                <div className="rounded-xl bg-white/10 p-3">
+                <div className="rounded-xl bg-white/10 p-3 align-baseline flex items-center justify-center">
                   <MapPin size={22} />
                 </div>
                 <div>
                   <p className="text-sm text-white/65">Appointment Information</p>
                   <p className="mt-1 font-semibold">
                     Please contact IDC Rahim Yar Khan to confirm availability and book an appointment.
+                    (03485928797 &
+                    03006702996)
                   </p>
                 </div>
               </div>

@@ -3,6 +3,9 @@ import {
   CalendarDays,
   CheckCircle2,
   ChevronDown,
+  Clock3,
+  MapPin,
+  Phone,
   X,
   XCircle,
 } from "lucide-react";
@@ -144,6 +147,55 @@ function DoctorHero() {
                 {item}
               </span>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact information cards */}
+      <section className="relative z-10 mx-auto -mt-7 w-full max-w-[1120px] px-4 pb-8 sm:-mt-10 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          {/* Call Us */}
+          <a
+            href="tel:+923485928797"
+            className="group flex min-h-[100px] items-center gap-4 rounded-2xl border border-[#e6e8e8] bg-white p-5 text-[#24444a] shadow-[0_12px_35px_rgba(16,86,107,0.10)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(16,86,107,0.16)]"
+          >
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#f4c632]/25 text-[#10566b] transition group-hover:bg-[#f4c632]/40">
+              <Phone size={22} strokeWidth={1.8} />
+            </span>
+            <span className="min-w-0">
+              <span className="block text-xs font-medium text-[#718084]">Call Us</span>
+              <span className="mt-1 block text-sm font-bold leading-relaxed">0348 5928797</span>
+              <span className="block text-sm font-bold leading-relaxed">0300 6702996</span>
+            </span>
+          </a>
+
+          {/* Clinic Location */}
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Islamabad+Diagnostic+Centre+Sheikh+Zayed+Hospital+Road+Rahim+Yar+Khan"
+            target="_blank"
+            rel="noreferrer"
+            className="group flex min-h-[100px] items-center gap-4 rounded-2xl border border-[#e6e8e8] bg-white p-5 text-[#24444a] shadow-[0_12px_35px_rgba(16,86,107,0.10)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(16,86,107,0.16)]"
+          >
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#dcebed] text-[#10566b] transition group-hover:bg-[#cce2e6]">
+              <MapPin size={22} strokeWidth={1.8} />
+            </span>
+            <span className="min-w-0">
+              <span className="block text-xs font-medium text-[#718084]">Clinic Location</span>
+              <span className="mt-1 block text-sm font-bold leading-relaxed">IDC, Sheikh Zayed Hospital Road</span>
+              <span className="block text-sm font-bold leading-relaxed">Rahim Yar Khan, Pakistan</span>
+            </span>
+          </a>
+
+          {/* Consultation Hours */}
+          <div className="flex min-h-[100px] items-center gap-4 rounded-2xl border border-[#e6e8e8] bg-white p-5 text-[#24444a] shadow-[0_12px_35px_rgba(16,86,107,0.10)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(16,86,107,0.16)]">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#dcebed] text-[#10566b]">
+              <Clock3 size={22} strokeWidth={1.8} />
+            </span>
+            <span className="min-w-0">
+              <span className="block text-xs font-medium text-[#718084]">Consultation Hours</span>
+              <span className="mt-1 block text-sm font-bold leading-relaxed">10:30 AM – 1:30 PM</span>
+              <span className="block text-sm font-bold leading-relaxed">Friday &amp; Sunday: Closed</span>
+            </span>
           </div>
         </div>
       </section>

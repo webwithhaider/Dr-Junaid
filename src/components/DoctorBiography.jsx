@@ -477,6 +477,9 @@ function DoctorBiography() {
                       <p className="mt-2 text-sm leading-6 text-gray-600">
                         American DiabetesAssociation (ADA) PROFESSIONAL MEMBER
                       </p>
+                      <p className="mt-1 text-sm leading-6 text-gray-600">
+                        Member of the American Association of Clinical Endocrinology (AACE)
+                      </p>
                     </div>
                   </div>
                   <p className="mt-4 text-xs leading-5 text-gray-500">

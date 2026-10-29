@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
+
 const API_URL = import.meta.env.VITE_API_URL;
 
 const initialForm = {
@@ -24,43 +25,43 @@ const initialForm = {
   message: "",
 };
 
-const faqs = [
-  {
-    question: "Can I consult the doctor online?",
-    answer:
-      "Yes. Online video consultations are available for patients across Pakistan. Contact the clinic to confirm the appointment and available timings.",
-  },
-  {
-    question: "What are the appointment timings?",
-    answer:
-      "Appointments are generally available Monday to Saturday, between 10:00 AM and 2:00 PM. Please contact the clinic to confirm availability.",
-  },
-  {
-    question: "How long will I have to wait?",
-    answer:
-      "The expected maximum waiting time is 15 minutes, although it may vary depending on the clinic schedule and patient appointments.",
-  },
-  {
-    question: "Where are the clinics located?",
-    answer:
-      "The listed clinic locations are Islamabad Specialists Clinic in Rahim Yar Khan and Dr. Junaid Mustafa Metabolic Clinic in Sadiqabad.",
-  },
-  {
-    question: "Which conditions are treated?",
-    answer:
-      "The clinic focuses on diabetes, obesity, fatty liver, liver diseases, hepatitis and digestive health concerns.",
-  },
-  {
-    question: "Is endoscopy available?",
-    answer:
-      "Selected in-clinic procedures, including endoscopy-related services, may be available. Please contact the clinic to confirm the service you need.",
-  },
-];
+// const faqs = [
+//   {
+//     question: "Can I consult the doctor online?",
+//     answer:
+//       "Yes. Online video consultations are available for patients across Pakistan. Contact the clinic to confirm the appointment and available timings.",
+//   },
+//   {
+//     question: "What are the appointment timings?",
+//     answer:
+//       "Appointments are generally available Monday to Saturday, between 10:00 AM and 2:00 PM. Please contact the clinic to confirm availability.",
+//   },
+//   {
+//     question: "How long will I have to wait?",
+//     answer:
+//       "The expected maximum waiting time is 15 minutes, although it may vary depending on the clinic schedule and patient appointments.",
+//   },
+//   {
+//     question: "Where are the clinics located?",
+//     answer:
+//       "The listed clinic locations are Islamabad Specialists Clinic in Rahim Yar Khan and Dr. Junaid Mustafa Metabolic Clinic in Sadiqabad.",
+//   },
+//   {
+//     question: "Which conditions are treated?",
+//     answer:
+//       "The clinic focuses on diabetes, obesity, fatty liver, liver diseases, hepatitis and digestive health concerns.",
+//   },
+//   {
+//     question: "Is endoscopy available?",
+//     answer:
+//       "Selected in-clinic procedures, including endoscopy-related services, may be available. Please contact the clinic to confirm the service you need.",
+//   },
+// ];
 
 function ContactUs() {
   const [formData, setFormData] = useState(initialForm);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [openFaq, setOpenFaq] = useState(null);
+  // const [openFaq, setOpenFaq] = useState(null);
 
   const [toast, setToast] = useState({
     show: false,
@@ -219,7 +220,7 @@ function ContactUs() {
                 Email Enquiries
               </p>
               <p className="mt-1 break-all text-sm font-bold text-[#153f4d]">
-                info@royalmedical.ae
+                doctorjunaidmustafa@hotmail.com
               </p>
             </div>
           </a>
@@ -231,7 +232,7 @@ function ContactUs() {
             <div>
               <p className="text-xs font-medium text-[#718892]">Clinic Hours</p>
               <p className="mt-1 text-sm font-bold text-[#153f4d]">
-                Mon–Sat, 10 AM–2 PM
+                Mon–Sat, 10:30 AM–1:30 PM
               </p>
             </div>
           </div>
@@ -275,10 +276,10 @@ function ContactUs() {
                     +92 332 9671650
                   </a>
                   <a
-                    href="mailto:info@royalmedical.ae"
+                    href="mailto:doctorjunaidmustafa@hotmail.com"
                     className="mt-1 block break-all text-sm text-[#687f89] hover:text-[#155c71]"
                   >
-                    info@royalmedical.ae
+                    doctorjunaidmustafa@hotmail.com
                   </a>
                 </div>
               </div>
@@ -301,7 +302,7 @@ function ContactUs() {
                     Monday to Saturday
                   </p>
                   <p className="mt-1 text-sm text-[#687f89]">
-                    10:00 AM – 2:00 PM
+                    10:30 AM – 1:30 PM
                   </p>
                 </div>
               </div>
@@ -318,7 +319,7 @@ function ContactUs() {
                     Islamabad Specialists Clinic, Rahim Yar Khan
                   </p>
                   <p className="mt-1 text-sm leading-6 text-[#687f89]">
-                    Dr. Junaid Mustafa Metabolic Clinic, Sadiqabad
+                    Dr. Junaid Mustafa Al Murtaza Hospital, Sadiqabad
                   </p>
                 </div>
               </div>
@@ -563,12 +564,12 @@ function ContactUs() {
 
                   <p className="flex items-center gap-2">
                     <Clock3 size={16} className="shrink-0 text-[#155c71]" />
-                    Monday–Saturday, 10:00 AM–2:00 PM
+                    Monday–Saturday, 10:30 AM–1:30 PM
                   </p>
                 </div>
 
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=IDC+Plaza+Shaikh+Zayed+Hospital+Rahim+Yar+Khan"
+                  href="https://maps.app.goo.gl/biwB2irEpnuz9Er98?g_st=ic"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#155c71] px-5 py-3 text-xs font-bold text-white transition hover:bg-[#10495b]"
@@ -581,7 +582,7 @@ function ContactUs() {
               <div className="relative min-h-[260px] bg-[#d8eaf0] md:min-h-[320px]">
                 <iframe
                   title="Islamabad Specialists Clinic map, Rahim Yar Khan"
-                  src="https://maps.google.com/maps?q=IDC%20Plaza%20Shaikh%20Zayed%20Hospital%20Rahim%20Yar%20Khan&z=14&output=embed"
+                  src="https://maps.app.goo.gl/biwB2irEpnuz9Er98?g_st=ic"
                   className="absolute inset-0 h-full w-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -646,58 +647,6 @@ function ContactUs() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
-        <div className="mx-auto max-w-[850px]">
-          <div className="mb-9 text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#a28b35]">
-              Need More Information?
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold text-[#153d4b] sm:text-4xl">
-              Frequently Asked Questions
-            </h2>
-
-            <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-[#e9c957]" />
-          </div>
-
-          <div className="space-y-3">
-            {faqs.map((faq, index) => (
-              <div
-                key={faq.question}
-                className="overflow-hidden rounded-xl border border-[#e1ebef] bg-white"
-              >
-                <button
-                  type="button"
-                  onClick={() =>
-                    setOpenFaq(openFaq === index ? null : index)
-                  }
-                  aria-expanded={openFaq === index}
-                  className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left transition hover:bg-[#f7fafb] sm:px-6"
-                >
-                  <span className="text-sm font-bold text-[#244a57]">
-                    {faq.question}
-                  </span>
-
-                  <ChevronDown
-                    size={18}
-                    className={`shrink-0 text-[#155c71] transition-transform ${
-                      openFaq === index ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-
-                {openFaq === index && (
-                  <div className="border-t border-[#edf2f4] px-5 py-4 text-sm leading-7 text-[#71858e] sm:px-6">
-                    {faq.answer}
-                  </div>
-                )}
-              </div>
-            ))}
           </div>
         </div>
       </section>

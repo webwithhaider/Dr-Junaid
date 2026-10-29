@@ -14,7 +14,7 @@ const faqItems = [
     question: "What are the appointment timings?",
     urduQuestion: "اپائنٹمنٹ کے اوقات کیا ہیں؟",
     answer:
-      "Clinic timings are Monday to Saturday, from 10:00 AM to 2:00 PM. Please contact the clinic to confirm your appointment slot.",
+      "Clinic timings are Monday–Saturday, Daily 10:30 am till 1:30 pm Friday Sunday OFF. Please contact the clinic to confirm your appointment slot.",
     urduAnswer:
       "کلینک پیر سے ہفتہ تک صبح 10 بجے سے دوپہر 2 بجے تک کھلا ہوتا ہے۔ اپنی اپائنٹمنٹ کے وقت کی تصدیق کے لیے کلینک سے رابطہ کریں۔",
   },
@@ -30,7 +30,7 @@ const faqItems = [
     question: "Where are the clinics located?",
     urduQuestion: "کلینکس کہاں واقع ہیں؟",
     answer:
-      "Islamabad Specialists Clinic is located at IDC Plaza, Plot #04, Shaikh Zayed Hospital, Rahim Yar Khan. Dr. Junaid Mustafa Metabolic Clinic is located on Shahi Road, Sadiqabad, Punjab.",
+      "Islamabad Specialists Clinic is located at IDC Plaza, Plot #04, Shaikh Zayed Hospital, Rahim Yar Khan. Dr. Junaid Mustafa Al-Murtaza Hospital is located on kacha-Shahi Road, Sadiqabad, Punjab.",
     urduAnswer:
       "اسلام آباد اسپیشلسٹس کلینک، آئی ڈی سی پلازہ، پلاٹ نمبر 04، شیخ زاید ہسپتال، رحیم یار خان میں واقع ہے۔ ڈاکٹر جنید مصطفیٰ میٹابولک کلینک شاہی روڈ، صادق آباد، پنجاب میں واقع ہے۔",
   },

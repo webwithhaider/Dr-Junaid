@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Clock3 } from "lucide-react";
+import {  MapPin, Clock3 } from "lucide-react";
 import {
   FaFacebookF,
   FaInstagram,
