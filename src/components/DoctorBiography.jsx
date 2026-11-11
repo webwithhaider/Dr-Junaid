@@ -797,12 +797,19 @@ Clinical Endocrinology (AACE)
 
               <div className="mt-4 flex items-center gap-3">
                 <Phone className="shrink-0 text-[#f2cb68]" size={20} />
-                <a
-                  href="tel:+923329671650"
-                  className="text-sm font-semibold hover:text-[#f2cb68]"
-                >
-                  +92 332 9671650
-                </a>
+              
+                 <a
+                    href="tel:+923006702996"
+                    className="block hover:text-[#f2cb68]"
+                  >
+                    +92 300 6702996
+                  </a>
+                  <a
+                    href="tel:+923485928797"
+                    className="block hover:text-[#f2cb68]"
+                  >
+                    +92 348 5928797
+                  </a>
               </div>
 
               <a
