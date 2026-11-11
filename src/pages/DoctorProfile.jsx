@@ -9,6 +9,8 @@ import {
   Languages,
   MapPin,
   Stethoscope,
+  Phone,
+  Target,
 } from "lucide-react";
 import doctorImage from "../assets/doctor.png";
 
@@ -69,8 +71,7 @@ function DoctorProfile() {
             </p>
 
             <p className="mt-5 max-w-xl leading-8 text-gray-600">
-              Learn more about Dr. Junaid Murtaza, explore his professional
-              profile and get in touch with the clinic to arrange a consultation.
+              Dedicated to providing expert medical care with a special focus on diabetes management, internal medicine, and patient well-being.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3">
@@ -217,7 +218,7 @@ function DoctorProfile() {
 
               <div className="flex gap-4">
                 <div className="rounded-xl bg-white/10 p-3 align-baseline flex items-center justify-center">
-                  <MapPin size={22} />
+                  <Target size={22} />
                 </div>
                 <div>
                   <p className="text-sm text-white/65">Specialty / Areas of Interest</p>
@@ -229,7 +230,7 @@ function DoctorProfile() {
 
 <div className="flex gap-4">
                 <div className="rounded-xl bg-white/10 p-3 align-baseline flex items-center justify-center">
-                  <MapPin size={22} />
+                  <Phone size={22} />
                 </div>
                 <div>
                   <p className="text-sm text-white/65">Appointment Information</p>

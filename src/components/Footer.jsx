@@ -3,10 +3,6 @@ import {  MapPin, Clock3 } from "lucide-react";
 import {
   FaFacebookF,
   FaInstagram,
-  FaTiktok,
-  FaTwitter,
-  FaLinkedinIn,
-  FaSnapchatGhost,
   FaWhatsapp,
 } from "react-icons/fa";
 
@@ -19,12 +15,7 @@ function Footer() {
       icon: <FaFacebookF size={13} />,
       href: "https://www.facebook.com/share/1BmQMUyqYG/",
     },
-    { name: "Instagram", icon: <FaInstagram size={14} />, href: "#" },
-    { name: "TikTok", icon: <FaTiktok size={13} />, href: "#" },
-    { name: "Twitter", icon: <FaTwitter size={13} />, href: "#" },
-    { name: "LinkedIn", icon: <FaLinkedinIn size={13} />, href: "#" },
-    { name: "Snapchat", icon: <FaSnapchatGhost size={14} />, href: "#" },
-    {
+    { name: "Instagram", icon: <FaInstagram size={14} />, href: "https://www.instagram.com/agent316?xtok=dnpxMDgzeXEybzRt" },{
       name: "WhatsApp",
       icon: <FaWhatsapp size={14} />,
       href: "https://wa.me/923329671650",

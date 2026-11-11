@@ -573,7 +573,7 @@ function ContactUs() {
 
                   <p className="flex items-center gap-2">
                     <Clock3 size={16} className="shrink-0 text-[#155c71]" />
-                    Monday–Saturday, 10:30 AM–1:30 PM
+                    Monday–Saturday, 10:30 AM–1:30 PM <br/>(FRI–SUN Closed)
                   </p>
                 </div>
 
@@ -603,7 +603,7 @@ function ContactUs() {
             <div className="grid overflow-hidden rounded-2xl border border-[#e2ebef] bg-white shadow-[0_8px_30px_rgba(17,63,78,0.05)] md:grid-cols-[0.9fr_1.1fr]">
               <div className="p-6 sm:p-8">
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#a28b35]">
-                  Dr. Junaid Mustafa Metabolic Clinic
+                  Al Murtaza Hospital
                 </p>
 
                 <h3 className="mt-3 text-2xl font-bold text-[#153d4b]">
