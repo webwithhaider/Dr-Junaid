@@ -203,7 +203,11 @@ function ContactUs() {
             <div className="min-w-0">
               <p className="text-xs font-medium text-[#718892]">Call Us</p>
               <p className="mt-1 text-sm font-bold text-[#153f4d]">
-                +92 332 9671650
+       
+                +92 348 5928797
+              </p>
+              <p className="mt-1 text-sm font-bold text-[#153f4d]">
+                +92 300 6702996
               </p>
             </div>
           </a>
