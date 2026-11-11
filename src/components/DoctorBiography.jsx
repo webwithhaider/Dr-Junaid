@@ -87,8 +87,6 @@ const consultationSteps = [
 ];
 
 const timeSlots = [
-  "10:00 AM",
-  "10:15 AM",
   "10:30 AM",
   "10:45 AM",
   "11:00 AM",
@@ -102,7 +100,6 @@ const timeSlots = [
   "1:00 PM",
   "1:15 PM",
   "1:30 PM",
-  "1:45 PM",
 ];
 
 function getLocalDate() {
