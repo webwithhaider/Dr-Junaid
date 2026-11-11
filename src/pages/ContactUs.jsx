@@ -578,7 +578,7 @@ function ContactUs() {
                 </div>
 
                 <a
-                  href="https://maps.google.com/maps?q=28.419877,70.315323&z=17&output=embed"
+                  href="https://www.google.com/maps/search/?api=1&query=Islamabad+Diagnostic+Centre+28.419877,70.315323"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#155c71] px-5 py-3 text-xs font-bold text-white transition hover:bg-[#10495b]"
@@ -646,7 +646,7 @@ function ContactUs() {
                 </div>
 
                 <a
-                  href="https://maps.google.com/maps?q=28.3132021,70.1306489&z=17&output=embed"
+                  href="https://www.google.com/maps/search/?api=1&query=Al+Murtaza+Hospital+28.3132021,70.1306489"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#155c71] px-5 py-3 text-xs font-bold text-white transition hover:bg-[#10495b]"
