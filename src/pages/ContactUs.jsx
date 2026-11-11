@@ -273,7 +273,8 @@ function ContactUs() {
                     href="tel:+923329671650"
                     className="mt-2 block text-sm text-[#687f89] hover:text-[#155c71]"
                   >
-                    +92 332 9671650
+                    +92 0348 5928797
+                    +92 300 6702996
                   </a>
                   <a
                     href="mailto:doctorjunaidmustafa@hotmail.com"
@@ -296,7 +297,8 @@ function ContactUs() {
                     href="tel:+923056798529"
                     className="mt-2 block text-sm text-[#687f89] hover:text-[#155c71]"
                   >
-                    +92 305 6798529
+                    +92 348 5928797
+                    +92 300 6702996
                   </a>
                   <p className="mt-1 text-sm text-[#687f89]">
                     Monday to Saturday
@@ -545,10 +547,10 @@ function ContactUs() {
                   <p className="flex items-center gap-2">
                     <Phone size={16} className="shrink-0 text-[#155c71]" />
                     <a
-                      href="tel:+923056798529"
+                      href="tel:+923006702996"
                       className="hover:text-[#155c71]"
                     >
-                      +92 305 6798529
+                      +92 300 6702996
                     </a>
                   </p>
 
@@ -582,7 +584,7 @@ function ContactUs() {
               <div className="relative min-h-[260px] bg-[#d8eaf0] md:min-h-[320px]">
                 <iframe
                   title="Islamabad Specialists Clinic map, Rahim Yar Khan"
-                  src="https://maps.app.goo.gl/biwB2irEpnuz9Er98?g_st=ic"
+                   src="https://maps.google.com/maps?q=28.419877,70.315323&z=17&output=embed"
                   className="absolute inset-0 h-full w-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -638,13 +640,13 @@ function ContactUs() {
               </div>
 
               <div className="relative min-h-[260px] bg-[#d8eaf0] md:min-h-[320px]">
-                <iframe
-                  title="Dr. Junaid Mustafa Metabolic Clinic map, Sadiqabad"
-                  src="https://maps.google.com/maps?q=28.4233262,70.3130453&z=15&output=embed"
-                  className="absolute inset-0 h-full w-full border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+            <iframe
+  title="Al Murtaza Hospital map"
+  src="https://maps.google.com/maps?q=28.3132021,70.1306489&z=17&output=embed"
+  className="absolute inset-0 h-full w-full border-0"
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
               </div>
             </div>
           </div>

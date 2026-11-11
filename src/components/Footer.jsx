@@ -117,19 +117,7 @@ function Footer() {
             <h3 className="text-xs font-bold text-white">Contact</h3>
 
             <div className="mt-3 space-y-2">
-              <a
-                href="tel:+923329671650"
-                className="block text-[11px] leading-[17px] text-[#d1e0e4] transition hover:text-[#f1c744]"
-              >
-                +92 332 9671650
-              </a>
-
-              <a
-                href="tel:+923056798529"
-                className="block text-[11px] leading-[17px] text-[#d1e0e4] transition hover:text-[#f1c744]"
-              >
-                +92 305 6798529
-              </a>
+          
 
               <a
                 href="tel:+923485928797"
@@ -137,10 +125,15 @@ function Footer() {
               >
                 +92 348 5928797
               </a>
-
+ <a
+                href="tel:+923056798529"
+                className="block text-[11px] leading-[17px] text-[#d1e0e4] transition hover:text-[#f1c744]"
+              >
+                +92 300 6702996
+              </a>
               <p className="flex items-start gap-1.5 text-[11px] leading-[17px] text-[#d1e0e4]">
                 <Clock3 size={12} className="mt-0.5 shrink-0" />
-                Mon to Sat, 10:00 AM to 02:00 PM
+                Mon to Sat, 10:30 AM to 1:30 PM 
               </p>
             </div>
           </div>
