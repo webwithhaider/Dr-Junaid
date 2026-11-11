@@ -209,21 +209,21 @@ function ContactUs() {
           </a>
 
           <a
-  href="mailto:doctorjunaidmustafa@hotmail.com"
-  className="flex items-center gap-4 rounded-2xl border border-[#e5edf1] bg-white p-5 shadow-[0_8px_30px_rgba(17,63,78,0.06)] transition hover:-translate-y-1"
->
-  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#fff7dc] text-[#9a7b20]">
-    <Mail size={21} />
-  </div>
-  <div className="min-w-0">
-    <p className="text-xs font-medium text-[#718892]">
-      Email Enquiries
-    </p>
-    <p className="mt-1 break-all text-sm font-bold text-[#153f4d]">
-      doctorjunaidmustafa@hotmail.com
-    </p>
-  </div>
-</a>
+            href="mailto:doctorjunaidmustafa@hotmail.com"
+            className="flex items-center gap-4 rounded-2xl border border-[#e5edf1] bg-white p-5 shadow-[0_8px_30px_rgba(17,63,78,0.06)] transition hover:-translate-y-1"
+          >
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#fff7dc] text-[#9a7b20]">
+              <Mail size={21} />
+            </div>
+            <div className="min-w-0">
+              <p className="text-xs font-medium text-[#718892]">
+                Email Enquiries
+              </p>
+              <p className="mt-1 break-all text-sm font-bold text-[#153f4d]">
+                doctorjunaidmustafa@hotmail.com
+              </p>
+            </div>
+          </a>
 
           <div className="flex items-center gap-4 rounded-2xl border border-[#e5edf1] bg-white p-5 shadow-[0_8px_30px_rgba(17,63,78,0.06)]">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#e7f2f6] text-[#155c71]">
@@ -269,13 +269,14 @@ function ContactUs() {
                   <h3 className="text-sm font-bold text-[#153d4b]">
                     General Enquiries
                   </h3>
-                  <a
-                    href="tel:+923329671650"
-                    className="mt-2 block text-sm text-[#687f89] hover:text-[#155c71]"
-                  >
-                    +92 0348 5928797
-                    +92 300 6702996
-                  </a>
+                  <div className="mt-2 space-y-2">
+                    <a href="tel:+923485928797" className="block text-sm text-[#687f89] hover:text-[#155c71]">
+                      +92 348 5928797
+                    </a>
+                    <a href="tel:+923006702996" className="block text-sm text-[#687f89] hover:text-[#155c71]">
+                      +92 300 6702996
+                    </a>
+                  </div>
                   <a
                     href="mailto:doctorjunaidmustafa@hotmail.com"
                     className="mt-1 block break-all text-sm text-[#687f89] hover:text-[#155c71]"
@@ -297,8 +298,10 @@ function ContactUs() {
                     href="tel:+923056798529"
                     className="mt-2 block text-sm text-[#687f89] hover:text-[#155c71]"
                   >
-                    +92 348 5928797
-                    +92 300 6702996
+                    <div className="mt-2 space-y-2">
+                      <p>+92 348 5928797</p>
+                      <p>+92 300 6702996</p>
+                    </div>
                   </a>
                   <p className="mt-1 text-sm text-[#687f89]">
                     Monday to Saturday
@@ -584,7 +587,7 @@ function ContactUs() {
               <div className="relative min-h-[260px] bg-[#d8eaf0] md:min-h-[320px]">
                 <iframe
                   title="Islamabad Specialists Clinic map, Rahim Yar Khan"
-                   src="https://maps.google.com/maps?q=28.419877,70.315323&z=17&output=embed"
+                  src="https://maps.google.com/maps?q=28.419877,70.315323&z=17&output=embed"
                   className="absolute inset-0 h-full w-full border-0"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -640,13 +643,13 @@ function ContactUs() {
               </div>
 
               <div className="relative min-h-[260px] bg-[#d8eaf0] md:min-h-[320px]">
-            <iframe
-  title="Al Murtaza Hospital map"
-  src="https://maps.google.com/maps?q=28.3132021,70.1306489&z=17&output=embed"
-  className="absolute inset-0 h-full w-full border-0"
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
+                <iframe
+                  title="Al Murtaza Hospital map"
+                  src="https://maps.google.com/maps?q=28.3132021,70.1306489&z=17&output=embed"
+                  className="absolute inset-0 h-full w-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>
@@ -688,11 +691,10 @@ function ContactUs() {
           <div
             role="status"
             aria-live="polite"
-            className={`flex items-start gap-3 rounded-2xl border bg-white px-5 py-4 shadow-[0_15px_45px_rgba(17,63,78,0.18)] ${
-              toast.type === "success"
-                ? "border-[#b9dfcf]"
-                : "border-[#f0c5c2]"
-            }`}
+            className={`flex items-start gap-3 rounded-2xl border bg-white px-5 py-4 shadow-[0_15px_45px_rgba(17,63,78,0.18)] ${toast.type === "success"
+              ? "border-[#b9dfcf]"
+              : "border-[#f0c5c2]"
+              }`}
           >
             {toast.type === "success" ? (
               <CheckCircle2
@@ -704,11 +706,10 @@ function ContactUs() {
             )}
 
             <p
-              className={`text-sm font-semibold leading-6 ${
-                toast.type === "success"
-                  ? "text-[#216747]"
-                  : "text-[#a52a24]"
-              }`}
+              className={`text-sm font-semibold leading-6 ${toast.type === "success"
+                ? "text-[#216747]"
+                : "text-[#a52a24]"
+                }`}
             >
               {toast.message}
             </p>
