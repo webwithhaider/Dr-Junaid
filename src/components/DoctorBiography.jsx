@@ -527,7 +527,7 @@ Clinical Endocrinology (AACE)
                       </p>
                       <p className="mt-2 text-sm leading-6 text-gray-600">
                         The clinic's provided online consultation window is
-                        10:00 AM to 2:00 PM. Please confirm availability when
+                        10:30 AM to 1:30 PM. Please confirm availability when
                         booking.
                       </p>
                     </div>
@@ -835,7 +835,7 @@ Clinical Endocrinology (AACE)
                 <p className="text-sm font-semibold text-[#304b49]">
                   Online Consultation
                 </p>
-                <p className="mt-2 text-sm text-gray-600">10:00 AM – 2:00 PM</p>
+                <p className="mt-2 text-sm text-gray-600">10:30 AM – 1:30 PM</p>
                 <p className="mt-2 text-xs leading-5 text-gray-500">
                   In-clinic timings may differ. Contact the clinic to confirm
                   the current schedule.
@@ -859,10 +859,10 @@ Clinical Endocrinology (AACE)
                 <Phone size={20} className="mt-0.5 shrink-0 text-[#087f80]" />
                 <div className="space-y-2 text-sm text-gray-600">
                   <a
-                    href="tel:+923056798529"
+                    href="tel:+923006702996"
                     className="block hover:text-[#087f80]"
                   >
-                    +92 305 6798529
+                    +92 300 6702996
                   </a>
                   <a
                     href="tel:+923485928797"
