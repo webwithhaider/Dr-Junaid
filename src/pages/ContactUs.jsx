@@ -578,7 +578,7 @@ function ContactUs() {
                 </div>
 
                 <a
-                  href="https://maps.app.goo.gl/biwB2irEpnuz9Er98?g_st=ic"
+                  href="https://maps.google.com/maps?q=28.419877,70.315323&z=17&output=embed"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#155c71] px-5 py-3 text-xs font-bold text-white transition hover:bg-[#10495b]"
@@ -622,10 +622,20 @@ function ContactUs() {
                   <p className="flex items-center gap-2">
                     <Phone size={16} className="shrink-0 text-[#155c71]" />
                     <a
-                      href="tel:+923329671650"
+                      href="tel:+923006702996"
                       className="hover:text-[#155c71]"
                     >
-                      +92 332 9671650
+                      +92 300 6702996
+                    </a>
+                  </p>
+
+                  <p className="flex items-center gap-2">
+                    <Phone size={16} className="shrink-0 text-[#155c71]" />
+                    <a
+                      href="tel:+923485928797"
+                      className="hover:text-[#155c71]"
+                    >
+                      +92 348 5928797
                     </a>
                   </p>
 
@@ -636,7 +646,7 @@ function ContactUs() {
                 </div>
 
                 <a
-                  href="https://maps.app.goo.gl/K9oRc4w5Rv7XWxDK8"
+                  href="https://maps.google.com/maps?q=28.3132021,70.1306489&z=17&output=embed"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#155c71] px-5 py-3 text-xs font-bold text-white transition hover:bg-[#10495b]"
