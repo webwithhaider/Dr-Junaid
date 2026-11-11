@@ -646,7 +646,7 @@ function ContactUs() {
                 </div>
 
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Al+Murtaza+Hospital+28.3132021,70.1306489"
+                  href="https://www.google.com/maps/place/Al+Murtaza+Hospital/@28.3132021,70.1306489,17z/data=!3m1!4b1!4m6!3m5!1s0x393741a3de4812b9:0xd82d5e858be53901!8m2!3d28.3132021!4d70.1306489!16s%2Fg%2F11h_sw_njd?entry=ttu&g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#155c71] px-5 py-3 text-xs font-bold text-white transition hover:bg-[#10495b]"
