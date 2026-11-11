@@ -209,21 +209,21 @@ function ContactUs() {
           </a>
 
           <a
-            href="mailto:info@royalmedical.ae"
-            className="flex items-center gap-4 rounded-2xl border border-[#e5edf1] bg-white p-5 shadow-[0_8px_30px_rgba(17,63,78,0.06)] transition hover:-translate-y-1"
-          >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#fff7dc] text-[#9a7b20]">
-              <Mail size={21} />
-            </div>
-            <div className="min-w-0">
-              <p className="text-xs font-medium text-[#718892]">
-                Email Enquiries
-              </p>
-              <p className="mt-1 break-all text-sm font-bold text-[#153f4d]">
-                doctorjunaidmustafa@hotmail.com
-              </p>
-            </div>
-          </a>
+  href="mailto:doctorjunaidmustafa@hotmail.com"
+  className="flex items-center gap-4 rounded-2xl border border-[#e5edf1] bg-white p-5 shadow-[0_8px_30px_rgba(17,63,78,0.06)] transition hover:-translate-y-1"
+>
+  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#fff7dc] text-[#9a7b20]">
+    <Mail size={21} />
+  </div>
+  <div className="min-w-0">
+    <p className="text-xs font-medium text-[#718892]">
+      Email Enquiries
+    </p>
+    <p className="mt-1 break-all text-sm font-bold text-[#153f4d]">
+      doctorjunaidmustafa@hotmail.com
+    </p>
+  </div>
+</a>
 
           <div className="flex items-center gap-4 rounded-2xl border border-[#e5edf1] bg-white p-5 shadow-[0_8px_30px_rgba(17,63,78,0.06)]">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#e7f2f6] text-[#155c71]">
