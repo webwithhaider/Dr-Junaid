@@ -124,7 +124,8 @@ function Footer() {
               </a>
               <p className="flex items-start gap-1.5 text-[11px] leading-[17px] text-[#d1e0e4]">
                 <Clock3 size={12} className="mt-0.5 shrink-0" />
-                Mon to Sat, 10:30 AM to 1:30 PM 
+                Mon to Sat, 10:30 AM to 1:30 PM <br/>
+                (FRI - SUN, CLOSED)
               </p>
             </div>
           </div>
