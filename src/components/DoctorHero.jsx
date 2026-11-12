@@ -165,7 +165,7 @@ function DoctorHero() {
             <span className="min-w-0">
               <span className="block text-xs font-medium text-[#718084]">Call Us</span>
               <span className="mt-1 block text-sm font-bold leading-relaxed">0348 5928797</span>
-              <span className="block text-sm font-bold leading-relaxed">0300 6702996</span>
+             <a href="tel:+923006702996" className=""><span className="block text-sm font-bold leading-relaxed">0300 6702996</span></a> 
             </span>
           </a>
 

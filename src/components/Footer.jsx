@@ -117,7 +117,7 @@ function Footer() {
                 +92 348 5928797
               </a>
  <a
-                href="tel:+9233006702996"
+                href="tel:+923006702996"
                 className="block text-[11px] leading-[17px] text-[#d1e0e4] transition hover:text-[#f1c744]"
               >
                 +92 300 6702996

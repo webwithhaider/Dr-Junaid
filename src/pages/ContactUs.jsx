@@ -299,13 +299,19 @@ function ContactUs() {
                     Appointments
                   </h3>
                   <a
-                    href="tel:+923056798529"
+                    href="tel:+923485928797"
                     className="mt-2 block text-sm text-[#687f89] hover:text-[#155c71]"
                   >
                     <div className="mt-2 space-y-2">
                       <p>+92 348 5928797</p>
-                      <p>+92 300 6702996</p>
+                      
                     </div>
+                  </a>
+                  <a
+                    href="tel:+923006702996"
+                    className="mt-2 block text-sm text-[#687f89] hover:text-[#155c71]"
+                  >
+                    <p>+92 300 6702996</p>
                   </a>
                   <p className="mt-1 text-sm text-[#687f89]">
                     Monday to Saturday

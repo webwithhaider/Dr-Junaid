@@ -6,6 +6,7 @@ import {
   ChevronDown,
   Calculator,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 
@@ -268,7 +269,7 @@ function Navbar() {
                 aria-label="Chat with us on WhatsApp"
                 className="mx-3 mt-4 flex items-center justify-center gap-2 rounded-lg bg-[#087F8C] px-4 py-3.5 text-sm font-semibold text-white transition hover:bg-[#066975]"
               >
-                <Phone size={17} />
+                <FaWhatsapp size={18} />
                 +92 332 9671650
               </a>
             </div>
