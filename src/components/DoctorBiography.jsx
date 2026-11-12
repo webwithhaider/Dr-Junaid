@@ -284,67 +284,7 @@ function DoctorBiography() {
         </div>
       )}
 
-      <section id="services" className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-12">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="text-xs font-extrabold uppercase tracking-[2px] text-[#087f80]">
-              How We Can Help
-            </span>
-
-            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#173f3e] sm:text-4xl">
-              Medical Care for Your Health
-            </h2>
-
-            <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
-              Get medical guidance for metabolic health, liver conditions and
-              common digestive concerns.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {treatments.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <div
-                  key={item.title}
-                  className="group rounded-2xl border border-[#e0eeea] bg-[#fbfefd] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#9ed2c9] hover:shadow-[0_15px_35px_rgba(8,127,128,0.08)]"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e2f4ef] text-[#087f80] transition group-hover:bg-[#087f80] group-hover:text-white">
-                    <Icon size={23} />
-                  </div>
-
-                  <div className="mt-5 flex items-center justify-between gap-3">
-                    <h3 className="text-lg font-bold text-[#173f3e]">
-                      {item.title}
-                    </h3>
-
-                    <span
-                      lang="ur"
-                      className="text-sm font-medium text-[#a4771c]"
-                    >
-                      {item.urdu}
-                    </span>
-                  </div>
-
-                  <p className="mt-3 text-sm leading-6 text-gray-600">
-                    {item.description}
-                  </p>
-
-                  <a
-                    href="#appointment"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#087f80] hover:text-[#065e5f]"
-                  >
-                    Book Consultation
-                    <ArrowRight size={16} />
-                  </a>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
+      {/* DOCTOR IMAGE AND INFORMATION */}
       <section
         id="doctor"
         className="overflow-hidden bg-[#f1f9f7] py-16 sm:py-20"
@@ -422,6 +362,7 @@ function DoctorBiography() {
           </div>
         </div>
 
+        {/* BIOGRAPHY AND QUALIFICATION TABS */}
         <div className="mx-auto mt-14 max-w-[1280px] px-5 sm:px-8 lg:px-12">
           <div className="overflow-hidden rounded-2xl border border-[#dcece7] bg-white">
             <div className="flex gap-1 overflow-x-auto border-b border-[#e3eeea] p-2">
@@ -481,7 +422,7 @@ function DoctorBiography() {
                   </div>
                   <p className="mt-4 text-xs leading-5 text-gray-500">
                     Member of the American Association of
-Clinical Endocrinology (AACE)
+                    Clinical Endocrinology (AACE)
                   </p>
                 </div>
               )}
@@ -536,6 +477,193 @@ Clinical Endocrinology (AACE)
         </div>
       </section>
 
+      {/* DIRECTION AND CLINIC CARDS */}
+      <section id="clinics" className="bg-white py-16 sm:py-20">
+        <div className="mx-auto grid max-w-[1280px] gap-5 px-5 sm:px-8 lg:grid-cols-3 lg:px-12">
+          <div className="rounded-2xl bg-[#173f3e] p-6 text-white sm:p-8">
+            <h3 className="text-lg font-extrabold text-white">
+              Islamabad Diagnostic Centre
+            </h3>
+
+            <div className="mt-4 flex items-start gap-3">
+              <MapPin size={20} className="mt-0.5 shrink-0 text-[#f2cb68]" />
+              <p className="text-sm leading-6 text-white">
+                IDC Plaza, Plot #04, Shaikh Zayed Hospital, Rahim Yar Khan
+              </p>
+            </div>
+
+            <div className="mt-4 flex items-start gap-3">
+              <Phone size={20} className="mt-0.5 shrink-0 text-[#f2cb68]" />
+              <div className="space-y-2 text-sm text-white">
+                <a
+                  href="tel:+923006702996"
+                  className="block hover:text-[#087f80]"
+                >
+                  +92 300 6702996
+                </a>
+                <a
+                  href="tel:+923485928797"
+                  className="block hover:text-[#087f80]"
+                >
+                  +92 348 5928797
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Islamabad+Diagnostic+Centre+28.419877,70.315323"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#f2cb68] px-5 py-3 text-sm font-bold text-[#173f3e] transition hover:bg-white"
+            >
+              Get Directions
+              <ArrowRight size={17} />
+            </a>
+
+            <p className="mt-4 text-sm text-white">
+              Monday–Saturday, Daily 10:30 am till 1:30 pm
+              Friday Sunday OFF
+            </p>
+          </div>
+
+          <div className="rounded-2xl bg-[#173f3e] p-6 text-white sm:p-8">
+            <span className="text-xs font-bold uppercase tracking-[2px] text-[#f2cb68]">
+              Visit Our Clinic
+            </span>
+
+            <h2 className="mt-3 text-2xl font-extrabold">
+              Al Murtaza Hospital
+            </h2>
+
+            <div className="mt-6 flex items-start gap-3">
+              <MapPin className="mt-0.5 shrink-0 text-[#f2cb68]" size={21} />
+              <p className="text-sm leading-7 text-white/80">
+                Al Murtaza Hospital, Kacha Shahi Road, Tehsil Sadiqabad.
+              </p>
+            </div>
+
+            <div className="mt-4 flex items-center gap-3">
+              <Phone className="shrink-0 text-[#f2cb68]" size={20} />
+
+              <div className="space-y-2 text-sm">
+                <a
+                  href="tel:+923006702996"
+                  className="block hover:text-[#f2cb68]"
+                >
+                  +92 300 6702996
+                </a>
+                <a
+                  href="tel:+923485928797"
+                  className="block hover:text-[#f2cb68]"
+                >
+                  +92 348 5928797
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="https://maps.app.goo.gl/biwB2irEpnuz9Er98?g_st=ic"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#f2cb68] px-5 py-3 text-sm font-bold text-[#173f3e] transition hover:bg-white"
+            >
+              Get Directions
+              <ArrowRight size={17} />
+            </a>
+          </div>
+
+          <div className="rounded-2xl border border-[#dcece7] bg-white p-6 sm:p-8">
+            <div className="flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e2f4ef] text-[#087f80]">
+                <Clock3 size={23} />
+              </div>
+              <div>
+                <h3 className="font-bold text-[#173f3e]">
+                  Consultation Hours
+                </h3>
+                <p className="mt-1 text-xs text-gray-500">
+                  Please confirm before visiting
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-5 border-t border-[#e5efec] pt-5">
+              <p className="text-sm font-semibold text-[#304b49]">
+                Online Consultation
+              </p>
+              <p className="mt-2 text-sm text-gray-600">10:30 AM – 1:30 PM</p>
+              <p className="mt-2 text-xs leading-5 text-gray-500">
+                In-clinic timings may differ. Contact the clinic to confirm
+                the current schedule.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DIABETES AND OTHER TREATMENT CARDS */}
+      <section id="services" className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="text-xs font-extrabold uppercase tracking-[2px] text-[#087f80]">
+              How We Can Help
+            </span>
+
+            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-[#173f3e] sm:text-4xl">
+              Medical Care for Your Health
+            </h2>
+
+            <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
+              Get medical guidance for metabolic health, liver conditions and
+              common digestive concerns.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {treatments.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <div
+                  key={item.title}
+                  className="group rounded-2xl border border-[#e0eeea] bg-[#fbfefd] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#9ed2c9] hover:shadow-[0_15px_35px_rgba(8,127,128,0.08)]"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e2f4ef] text-[#087f80] transition group-hover:bg-[#087f80] group-hover:text-white">
+                    <Icon size={23} />
+                  </div>
+
+                  <div className="mt-5 flex items-center justify-between gap-3">
+                    <h3 className="text-lg font-bold text-[#173f3e]">
+                      {item.title}
+                    </h3>
+
+                    <span
+                      lang="ur"
+                      className="text-sm font-medium text-[#a4771c]"
+                    >
+                      {item.urdu}
+                    </span>
+                  </div>
+
+                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                    {item.description}
+                  </p>
+
+                  <a
+                    href="#appointment"
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#087f80] hover:text-[#065e5f]"
+                  >
+                    Book Consultation
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ONLINE CONSULTATION STEPS */}
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-12">
           <div className="mx-auto max-w-2xl text-center">
@@ -594,8 +722,9 @@ Clinical Endocrinology (AACE)
         </div>
       </section>
 
+      {/* APPOINTMENT FORM */}
       <section id="appointment" className="bg-[#f1f9f7] py-16 sm:py-20">
-        <div className="mx-auto grid max-w-[1280px] gap-8 px-5 sm:px-8 lg:grid-cols-[1fr_0.9fr] lg:px-12">
+        <div className="mx-auto max-w-[850px] px-5 sm:px-8 lg:px-12">
           <div className="rounded-2xl border border-[#dcece7] bg-white p-6 shadow-sm sm:p-8">
             <span className="text-xs font-extrabold uppercase tracking-[2px] text-[#087f80]">
               Request an Appointment
@@ -773,127 +902,6 @@ Clinical Endocrinology (AACE)
                 Your request will be sent to the clinic for confirmation.
               </p>
             </form>
-          </div>
-
-          <div id="clinics" className="space-y-5">
-            
-            <div className="rounded-2xl bg-[#173f3e] p-6 text-white sm:p-8">
-              <h3 className="text-lg font-extrabold text-white">
-                Islamabad Diagnostic Centre
-              </h3>
-
-              <div className="mt-4 flex items-start gap-3">
-                <MapPin size={20} className="mt-0.5 shrink-0 text-[#f2cb68]" />
-                <p className="text-sm leading-6 text-white">
-                  IDC Plaza, Plot #04, Shaikh Zayed Hospital, Rahim Yar Khan
-                </p>
-              </div>
-
-              <div className="mt-4 flex items-start gap-3">
-                <Phone size={20} className="mt-0.5 shrink-0 text-[#f2cb68]" />
-                <div className="space-y-2 text-sm text-white">
-                  <a
-                    href="tel:+923006702996"
-                    className="block hover:text-[#087f80]"
-                  >
-                    +92 300 6702996
-                  </a>
-                  <a
-                    href="tel:+923485928797"
-                    className="block hover:text-[#087f80]"
-                  >
-                    +92 348 5928797
-                  </a>
-                </div>
-              </div>
-<a
-                href="https://www.google.com/maps/search/?api=1&query=Islamabad+Diagnostic+Centre+28.419877,70.315323"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#f2cb68] px-5 py-3 text-sm font-bold text-[#173f3e] transition hover:bg-white"
-              >
-                Get Directions
-                <ArrowRight size={17} />
-              </a>
-              <p className="mt-4 text-sm text-white">
-                Monday–Saturday, Daily 10:30 am till 1:30 pm
-                Friday Sunday OFF
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-[#173f3e] p-6 text-white sm:p-8">
-              <span className="text-xs font-bold uppercase tracking-[2px] text-[#f2cb68]">
-                Visit Our Clinic
-              </span>
-
-              <h2 className="mt-3 text-2xl font-extrabold">
-                Al Murtaza Hospital
-              </h2>
-
-              <div className="mt-6 flex items-start gap-3">
-                <MapPin className="mt-0.5 shrink-0 text-[#f2cb68]" size={21} />
-                <p className="text-sm leading-7 text-white/80">
-                  Al Murtaza Hospital, Kacha Shahi Road, Tehsil Sadiqabad.
-                </p>
-              </div>
-
-              <div className="mt-4 flex items-center gap-3">
-                <Phone className="shrink-0 text-[#f2cb68]" size={20} />
-              
-                 <a
-                    href="tel:+923006702996"
-                    className="block hover:text-[#f2cb68]"
-                  >
-                    +92 300 6702996
-                  </a>
-                  <a
-                    href="tel:+923485928797"
-                    className="block hover:text-[#f2cb68]"
-                  >
-                    +92 348 5928797
-                  </a>
-              </div>
-
-              <a
-                href="https://maps.app.goo.gl/biwB2irEpnuz9Er98?g_st=ic"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#f2cb68] px-5 py-3 text-sm font-bold text-[#173f3e] transition hover:bg-white"
-              >
-                Get Directions
-                <ArrowRight size={17} />
-              </a>
-            </div>
-
-            
-
-
-            <div className="rounded-2xl border border-[#dcece7] bg-white p-6 sm:p-8">
-              <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e2f4ef] text-[#087f80]">
-                  <Clock3 size={23} />
-                </div>
-                <div>
-                  <h3 className="font-bold text-[#173f3e]">
-                    Consultation Hours
-                  </h3>
-                  <p className="mt-1 text-xs text-gray-500">
-                    Please confirm before visiting
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-5 border-t border-[#e5efec] pt-5">
-                <p className="text-sm font-semibold text-[#304b49]">
-                  Online Consultation
-                </p>
-                <p className="mt-2 text-sm text-gray-600">10:30 AM – 1:30 PM</p>
-                <p className="mt-2 text-xs leading-5 text-gray-500">
-                  In-clinic timings may differ. Contact the clinic to confirm
-                  the current schedule.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

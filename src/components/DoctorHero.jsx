@@ -168,7 +168,7 @@ function DoctorHero() {
              <a href="tel:+923006702996" className=""><span className="block text-sm font-bold leading-relaxed">0300 6702996</span></a> 
             </span>
           </a>
-
+    
           {/* Clinic Location */}
           <a
             href="https://www.google.com/maps/search/?api=1&query=Islamabad+Diagnostic+Centre+Sheikh+Zayed+Hospital+Road+Rahim+Yar+Khan"
