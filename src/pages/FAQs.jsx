@@ -211,7 +211,7 @@ function FAQs() {
             </p>
 
             <a
-              href="tel:+923329671650"
+              href="tel:+923485928797"
               className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-[#087F8C] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#066975] sm:w-auto"
             >
               Contact the Clinic
