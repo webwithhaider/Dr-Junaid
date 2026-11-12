@@ -535,7 +535,7 @@ function ContactUs() {
             <div className="grid overflow-hidden rounded-2xl border border-[#e2ebef] bg-white shadow-[0_8px_30px_rgba(17,63,78,0.05)] md:grid-cols-[0.9fr_1.1fr]">
               <div className="p-6 sm:p-8">
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#a28b35]">
-                  Islamabad Specialists Clinic
+                  Islamabad Diagnostic Centre
                 </p>
 
                 <h3 className="mt-3 text-2xl font-bold text-[#153d4b]">
@@ -616,7 +616,7 @@ function ContactUs() {
                       size={17}
                       className="mt-0.5 shrink-0 text-[#155c71]"
                     />
-                    Shahi Road, Sadiqabad Tehsil, Punjab 64350, Pakistan
+                    Al Murtaza Hospital, Kacha Shahi Road, Tehsil Sadiqabad.
                   </p>
 
                   <p className="flex items-center gap-2">

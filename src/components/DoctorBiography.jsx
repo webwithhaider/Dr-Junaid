@@ -776,6 +776,51 @@ Clinical Endocrinology (AACE)
           </div>
 
           <div id="clinics" className="space-y-5">
+            
+            <div className="rounded-2xl bg-[#173f3e] p-6 text-white sm:p-8">
+              <h3 className="text-lg font-extrabold text-white">
+                Islamabad Diagnostic Centre
+              </h3>
+
+              <div className="mt-4 flex items-start gap-3">
+                <MapPin size={20} className="mt-0.5 shrink-0 text-[#f2cb68]" />
+                <p className="text-sm leading-6 text-white">
+                  IDC Plaza, Plot #04, Shaikh Zayed Hospital, Rahim Yar Khan
+                </p>
+              </div>
+
+              <div className="mt-4 flex items-start gap-3">
+                <Phone size={20} className="mt-0.5 shrink-0 text-[#f2cb68]" />
+                <div className="space-y-2 text-sm text-white">
+                  <a
+                    href="tel:+923006702996"
+                    className="block hover:text-[#087f80]"
+                  >
+                    +92 300 6702996
+                  </a>
+                  <a
+                    href="tel:+923485928797"
+                    className="block hover:text-[#087f80]"
+                  >
+                    +92 348 5928797
+                  </a>
+                </div>
+              </div>
+<a
+                href="https://www.google.com/maps/search/?api=1&query=Islamabad+Diagnostic+Centre+28.419877,70.315323"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-lg bg-[#f2cb68] px-5 py-3 text-sm font-bold text-[#173f3e] transition hover:bg-white"
+              >
+                Get Directions
+                <ArrowRight size={17} />
+              </a>
+              <p className="mt-4 text-sm text-white">
+                Monday–Saturday, Daily 10:30 am till 1:30 pm
+                Friday Sunday OFF
+              </p>
+            </div>
+
             <div className="rounded-2xl bg-[#173f3e] p-6 text-white sm:p-8">
               <span className="text-xs font-bold uppercase tracking-[2px] text-[#f2cb68]">
                 Visit Our Clinic
@@ -788,7 +833,7 @@ Clinical Endocrinology (AACE)
               <div className="mt-6 flex items-start gap-3">
                 <MapPin className="mt-0.5 shrink-0 text-[#f2cb68]" size={21} />
                 <p className="text-sm leading-7 text-white/80">
-                  Shahi Road, Sadiqabad Tehsil, Punjab 64350, Pakistan
+                  Al Murtaza Hospital, Kacha Shahi Road, Tehsil Sadiqabad.
                 </p>
               </div>
 
@@ -820,6 +865,9 @@ Clinical Endocrinology (AACE)
               </a>
             </div>
 
+            
+
+
             <div className="rounded-2xl border border-[#dcece7] bg-white p-6 sm:p-8">
               <div className="flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e2f4ef] text-[#087f80]">
@@ -845,42 +893,6 @@ Clinical Endocrinology (AACE)
                   the current schedule.
                 </p>
               </div>
-            </div>
-
-            <div className="rounded-2xl border border-[#dcece7] bg-white p-6 sm:p-8">
-              <h3 className="text-lg font-bold text-[#173f3e]">
-                Islamabad Specialists Clinic
-              </h3>
-
-              <div className="mt-4 flex items-start gap-3">
-                <MapPin size={20} className="mt-0.5 shrink-0 text-[#087f80]" />
-                <p className="text-sm leading-6 text-gray-600">
-                  IDC Plaza, Plot #04, Shaikh Zayed Hospital, Rahim Yar Khan
-                </p>
-              </div>
-
-              <div className="mt-4 flex items-start gap-3">
-                <Phone size={20} className="mt-0.5 shrink-0 text-[#087f80]" />
-                <div className="space-y-2 text-sm text-gray-600">
-                  <a
-                    href="tel:+923006702996"
-                    className="block hover:text-[#087f80]"
-                  >
-                    +92 300 6702996
-                  </a>
-                  <a
-                    href="tel:+923485928797"
-                    className="block hover:text-[#087f80]"
-                  >
-                    +92 348 5928797
-                  </a>
-                </div>
-              </div>
-
-              <p className="mt-4 text-sm text-gray-600">
-                Monday–Saturday, Daily 10:30 am till 1:30 pm
-                Friday Sunday OFF
-              </p>
             </div>
           </div>
         </div>
