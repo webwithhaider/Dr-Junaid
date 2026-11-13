@@ -143,7 +143,7 @@ function Footer() {
 
               <div>
                 <p className="text-[11px] leading-[17px] text-[#d1e0e4]">
-                  Dr. Junaid Mustafa Metabolic Clinic, Sadiqabad
+                  Al Murtaza Hospital, Kacha Shahi Road Tehsil Sadiqabad
                 </p>
               </div>
 

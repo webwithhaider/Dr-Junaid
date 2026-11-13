@@ -228,7 +228,7 @@ function DoctorProfile() {
                 </div>
               </div>
 
-<div className="flex gap-4">
+              <div className="flex gap-4">
                 <div className="rounded-xl bg-white/10 p-3 align-baseline flex items-center justify-center">
                   <Phone size={22} />
                 </div>
@@ -247,14 +247,15 @@ function DoctorProfile() {
         </div>
       </section>
 
-
-      <section className="bg-white py-16 md:py-20">
+<Link to="/#doctor" className="group">
+      <section id="doctor" className="bg-white py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
+
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#087f80]">
             Professional Background
           </p>
 
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl group-hover:text-[#087f80]">
             Education & Experience
           </h2>
 
@@ -283,7 +284,7 @@ function DoctorProfile() {
           </div>
         </div>
       </section>
-
+</Link>
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-20">
         <div className="text-center">
@@ -296,7 +297,7 @@ function DoctorProfile() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-gray-600">
-           Please contact IDC Rahim Yar Khan to confirm availability and book an appointment.
+            Please contact IDC Rahim Yar Khan to confirm availability and book an appointment.
           </p>
         </div>
 
