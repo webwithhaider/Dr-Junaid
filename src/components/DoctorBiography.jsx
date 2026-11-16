@@ -481,6 +481,9 @@ function DoctorBiography() {
       <section id="clinics" className="bg-white py-16 sm:py-20">
         <div className="mx-auto grid max-w-[1280px] gap-5 px-5 sm:px-8 lg:grid-cols-3 lg:px-12">
           <div className="rounded-2xl bg-[#173f3e] p-6 text-white sm:p-8">
+            <span className="text-xs font-bold uppercase tracking-[2px] text-[#f2cb68]">
+              Visit Our Clinic
+            </span>
             <h3 className="text-lg font-extrabold text-white">
               Islamabad Diagnostic Centre
             </h3>
@@ -570,6 +573,10 @@ function DoctorBiography() {
               Get Directions
               <ArrowRight size={17} />
             </a>
+            <p className="mt-4 text-sm text-white">
+              Monday–Saturday, Daily 10:30 am till 1:30 pm
+              Friday Sunday OFF
+            </p>
           </div>
 
           <div className="rounded-2xl border border-[#dcece7] bg-white p-6 sm:p-8">

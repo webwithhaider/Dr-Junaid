@@ -288,16 +288,14 @@ function DoctorProfile() {
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-20">
         <div className="text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#087f80]">
-            Diabetes, Obesity, Fatty Liver (MASLD), and Metabolic Health
-          </p>
+          
 
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
             Medical Services
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-gray-600">
-            Please contact IDC Rahim Yar Khan to confirm availability and book an appointment.
+            Diabetes, Obesity, Fatty Liver (MASLD), and Metabolic Health
           </p>
         </div>
 
@@ -311,7 +309,7 @@ function DoctorProfile() {
                 <Stethoscope size={25} />
               </div>
 
-              <h3 className="mt-4 font-bold">{item}</h3>
+              <h3 className="mt-4 font-bold text-[#087f80]">{item}</h3>
             </article>
           ))}
         </div>
