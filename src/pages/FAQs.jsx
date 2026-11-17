@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import faqsHero from "../assets/faqs-hero.png";
 
 const faqItems = [
   {
@@ -68,9 +69,9 @@ function FAQs() {
       {/* Full-width banner image - before FAQs */}
       <section className="w-full overflow-hidden bg-white">
         <img
-          src="/faqs-hero.png"
+          src={faqsHero}
           alt="Dr. Junaid Mustafa - Medical Clinic"
-          className="block h-[220px] w-full object-cover object-center sm:h-[340px] lg:h-[480px]"
+          className="block h-55 w-full object-cover object-center sm:h-85 lg:h-120"
         />
       </section>
 

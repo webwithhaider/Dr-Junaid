@@ -550,16 +550,16 @@ function DoctorBiography() {
 
               <div className="space-y-2 text-sm">
                 <a
-                  href="tel:+923006702996"
+                  href="tel:+923036140741"
                   className="block hover:text-[#f2cb68]"
                 >
-                  +92 300 6702996
+                  +92 303 6140741
                 </a>
                 <a
-                  href="tel:+923485928797"
+                  href="tel:+923340390540"
                   className="block hover:text-[#f2cb68]"
                 >
-                  +92 348 5928797
+                  +92 334 0390540
                 </a>
               </div>
             </div>
