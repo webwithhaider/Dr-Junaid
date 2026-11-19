@@ -165,6 +165,9 @@ function Footer() {
           <p className="text-[10px] leading-5 text-[#c2d5da]">
             © {new Date().getFullYear()} Dr. Junaid Mustafa. All rights reserved.
           </p>
+          <p className="text-[10px] leading-5 text-[#c2d5da]">
+            © {new Date().getFullYear()} Marketing By Jam Zohaib - Contact No.+92 312 7568870
+          </p>
         </div>
       </div>
     </footer>

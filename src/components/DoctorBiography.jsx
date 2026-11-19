@@ -574,7 +574,8 @@ function DoctorBiography() {
               <ArrowRight size={17} />
             </a>
             <p className="mt-4 text-sm text-white">
-              Monday–Monday, Daily 10:30 am till 1:30 pm
+              Available Daily from
+              4:30 pm till 9:00 pm
               
             </p>
           </div>

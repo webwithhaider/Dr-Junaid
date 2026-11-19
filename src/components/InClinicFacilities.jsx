@@ -80,7 +80,7 @@ function InClinicFacilities() {
 
             <h2 className="max-w-xl text-3xl font-bold leading-tight tracking-tight text-[#173b49] sm:text-4xl lg:text-[48px]">
               Advanced Endoscopy
-              <span className="mt-1 block text-[#237c7d]">at the Clinic</span>
+              <span className="mt-1 block text-[#237c7d]">at the Al Murtaza Hospital</span>
               <span
                 lang="ur"
                 dir="rtl"
