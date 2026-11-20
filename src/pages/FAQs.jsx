@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
-import faqsHero from "../assets/faqs-hero.png";
+import faqsHero from "../assets/faqs-hero.jpeg";
 
 const faqItems = [
   {
