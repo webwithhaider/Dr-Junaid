@@ -17,6 +17,7 @@ const initialFormData = {
   phone: "",
   email: "",
   preferredDate: "",
+  consultationType: "",
   specialty: "Diabetes & Metabolic Health",
   doctorName: "Dr. Junaid Mustafa",
   message: "",
@@ -66,6 +67,7 @@ function DoctorHero() {
           fullName: formData.fullName.trim(),
           phone: formData.phone.trim(),
           preferredDate: formData.preferredDate,
+          consultationType: formData.consultationType,
           doctorName: "Dr. Junaid Mustafa",
         }),
       });
@@ -165,10 +167,10 @@ function DoctorHero() {
             <span className="min-w-0">
               <span className="block text-xs font-medium text-[#718084]">Call Us</span>
               <span className="mt-1 block text-sm font-bold leading-relaxed">0348 5928797</span>
-             <a href="tel:+923006702996" className=""><span className="block text-sm font-bold leading-relaxed">0300 6702996</span></a> 
+              <span className="block text-sm font-bold leading-relaxed">0300 6702996</span>
             </span>
           </a>
-    
+
           {/* Clinic Location */}
           <a
             href="https://www.google.com/maps/search/?api=1&query=Islamabad+Diagnostic+Centre+Sheikh+Zayed+Hospital+Road+Rahim+Yar+Khan"
@@ -321,6 +323,45 @@ function DoctorHero() {
                     required
                     className="h-12 w-full rounded-lg border border-[#d5e2e5] px-4 text-sm outline-none focus:border-[#14758a] focus:ring-2 focus:ring-[#14758a]/10"
                   />
+                </div>
+
+                {/* NEW: Consultation Type */}
+                <div>
+                  <label
+                    htmlFor="hero-consultation-type"
+                    className="mb-2 block text-sm font-semibold"
+                  >
+                    Consultation Type *
+                  </label>
+
+                  <div className="relative">
+                    <select
+                      id="hero-consultation-type"
+                      name="consultationType"
+                      value={formData.consultationType}
+                      onChange={handleChange}
+                      required
+                      className="h-12 w-full appearance-none rounded-lg border border-[#d5e2e5] bg-white px-4 pr-10 text-sm outline-none focus:border-[#14758a] focus:ring-2 focus:ring-[#14758a]/10"
+                    >
+                      <option value="" disabled>
+                        Select consultation type
+                      </option>
+                      <option value="IDC Consultant">
+                        IDC Consultant
+                      </option>
+                      <option value="Video Consultation">
+                        Video Consultation
+                      </option>
+                      <option value="Al Murtaza Hospital">
+                        Al Murtaza Hospital
+                      </option>
+                    </select>
+
+                    <ChevronDown
+                      size={17}
+                      className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"
+                    />
+                  </div>
                 </div>
 
                 <div>
