@@ -208,18 +208,7 @@ function Footer() {
 
             <span className="text-white/30">|</span>
 
-            {/* Developer Portfolio Link */}
-            <a
-              href="https://my-portfolio-pp6g9o52m-hasnain-ahmad.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Designed and developed by Hasnain Ahmad"
-              className="inline-flex items-center gap-1 font-semibold text-[#f1c744] transition duration-300 hover:text-white"
-            >
-              <span className="font-bold">{"</>"}</span>
-              <span>Designed & Developed by Hasnain Ahmad</span>
-              <span className="text-[9px]">↗</span>
-            </a>
+           
 
           </div>
         </div>
