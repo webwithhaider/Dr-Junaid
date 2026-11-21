@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -10,8 +9,8 @@ import {
   Clock3,
   Star,
   MessageCircle,
-  BookOpen,
 } from "lucide-react";
+import docImage from "../assets/Doc.jpeg";
 
 const articles = [
   {
@@ -111,7 +110,14 @@ function UrduText({ children, className = "" }) {
   );
 }
 
-function SectionHeading({ eyebrow, urduEyebrow, title, urduTitle, description, urduDescription }) {
+function SectionHeading({
+  eyebrow,
+  urduEyebrow,
+  title,
+  urduTitle,
+  description,
+  urduDescription,
+}) {
   return (
     <div className="mx-auto mb-10 max-w-2xl text-center">
       <p className="text-[10px] font-extrabold uppercase tracking-[2.5px] text-[#b38a13] sm:text-[11px]">
@@ -152,7 +158,6 @@ function SectionHeading({ eyebrow, urduEyebrow, title, urduTitle, description, u
 function RelatedArticles() {
   return (
     <>
-     
       <section className="bg-[#f2f7f9] px-4 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
@@ -263,7 +268,6 @@ function RelatedArticles() {
         </div>
       </section>
 
-     
       <section className="bg-white px-4 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
@@ -344,7 +348,21 @@ function RelatedArticles() {
         </div>
       </section>
 
-     
+      {/* Doctor Image - Click to Open WhatsApp */}
+      <a
+        href="https://wa.me/923329671650"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp"
+        className="block cursor-pointer"
+      >
+        <img
+          src={docImage}
+          alt="Contact us on WhatsApp"
+          className="block h-auto w-full object-cover"
+        />
+      </a>
+
       <section
         id="reviews"
         className="scroll-mt-28 bg-[#f2f7f9] px-4 py-16 sm:px-8 sm:py-20"

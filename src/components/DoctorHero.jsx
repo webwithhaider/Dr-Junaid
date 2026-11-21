@@ -346,11 +346,11 @@ function DoctorHero() {
                       <option value="" disabled>
                         Select consultation type
                       </option>
-                      <option value="IDC Consultant">
-                        IDC Consultant
-                      </option>
                       <option value="Video Consultation">
                         Video Consultation
+                      </option>
+                      <option value="IDC Consultant">
+                        Islamabad Specialist Clinic 
                       </option>
                       <option value="Al Murtaza Hospital">
                         Al Murtaza Hospital
