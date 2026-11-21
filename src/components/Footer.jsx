@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import {  MapPin, Clock3 } from "lucide-react";
+import { MapPin, Clock3 } from "lucide-react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -15,7 +15,12 @@ function Footer() {
       icon: <FaFacebookF size={13} />,
       href: "https://www.facebook.com/share/1BmQMUyqYG/",
     },
-    { name: "Instagram", icon: <FaInstagram size={14} />, href: "https://www.instagram.com/agent316?xtok=dnpxMDgzeXEybzRt" },{
+    {
+      name: "Instagram",
+      icon: <FaInstagram size={14} />,
+      href: "https://www.instagram.com/agent316?xtok=dnpxMDgzeXEybzRt",
+    },
+    {
       name: "WhatsApp",
       icon: <FaWhatsapp size={14} />,
       href: "https://wa.me/923329671650",
@@ -41,8 +46,10 @@ function Footer() {
   return (
     <footer className="bg-[#103f4d] text-white">
       <div className="mx-auto max-w-[1200px] px-6 pb-8 pt-10 sm:px-8 sm:pt-12">
-        {/* Four-column layout from the PDF */}
+
+        {/* Footer Main Content */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1fr_1.15fr] lg:gap-10">
+
           {/* Brand */}
           <div>
             <Link to="/" className="inline-flex items-center gap-2.5">
@@ -56,6 +63,7 @@ function Footer() {
                 <h3 className="text-[13px] font-bold leading-5 text-white">
                   Dr. Junaid Mustafa
                 </h3>
+
                 <p className="text-[10px] text-[#d1e0e4]">
                   MBBS, FCPS (Medicine)
                 </p>
@@ -70,14 +78,15 @@ function Footer() {
               Online video consultation across Pakistan.
             </p>
 
+            {/* Social Links */}
             <div className="mt-4 flex flex-wrap gap-2">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
                   aria-label={social.name}
-                  target={social.href === "#" ? undefined : "_blank"}
-                  rel={social.href === "#" ? undefined : "noreferrer"}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex h-7 w-7 items-center justify-center rounded-full border border-white/20 text-[#d1e0e4] transition duration-300 hover:border-[#f1c744] hover:bg-[#f1c744] hover:text-[#103f4d]"
                 >
                   {social.icon}
@@ -88,7 +97,9 @@ function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xs font-bold text-white">Quick Links</h3>
+            <h3 className="text-xs font-bold text-white">
+              Quick Links
+            </h3>
 
             <div className="mt-3 space-y-1.5">
               {quickLinks.map((item) => (
@@ -105,34 +116,42 @@ function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xs font-bold text-white">Contact</h3>
+            <h3 className="text-xs font-bold text-white">
+              Contact
+            </h3>
 
             <div className="mt-3 space-y-2">
-          
-
               <a
                 href="tel:+923485928797"
                 className="block text-[11px] leading-[17px] text-[#d1e0e4] transition hover:text-[#f1c744]"
               >
                 +92 348 5928797
               </a>
- <a
+
+              <a
                 href="tel:+923006702996"
                 className="block text-[11px] leading-[17px] text-[#d1e0e4] transition hover:text-[#f1c744]"
               >
                 +92 300 6702996
               </a>
+
               <p className="flex items-start gap-1.5 text-[11px] leading-[17px] text-[#d1e0e4]">
                 <Clock3 size={12} className="mt-0.5 shrink-0" />
-                Mon to Sat, 10:30 AM to 1:30 PM <br/>
-                (FRI - SUN, CLOSED)
+
+                <span>
+                  Mon to Sat, 10:30 AM to 1:30 PM
+                  <br />
+                  (FRI - SUN, CLOSED)
+                </span>
               </p>
             </div>
           </div>
 
           {/* Clinics */}
           <div>
-            <h3 className="text-xs font-bold text-white">Clinics</h3>
+            <h3 className="text-xs font-bold text-white">
+              Clinics
+            </h3>
 
             <div className="mt-3 space-y-3">
               <div>
@@ -152,6 +171,7 @@ function Footer() {
                   size={12}
                   className="mt-0.5 shrink-0 text-[#f1c744]"
                 />
+
                 <p className="text-[11px] leading-[17px] text-[#d1e0e4]">
                   Online video consultation all over Pakistan
                 </p>
@@ -160,15 +180,50 @@ function Footer() {
           </div>
         </div>
 
-        {/* Copyright — like the reference */}
-        <div className="mt-8 border-t border-white/15 pt-4 text-center">
-          <p className="text-[10px] leading-5 text-[#c2d5da]">
+        {/* Copyright & Credits */}
+        <div className="mt-8 border-t border-white/15 pt-4">
+
+          <p className="text-center text-[10px] leading-5 text-[#c2d5da]">
             © {new Date().getFullYear()} Dr. Junaid Mustafa. All rights reserved.
           </p>
-          <p className="text-[10px] leading-5 text-[#c2d5da]">
-            © {new Date().getFullYear()} Marketing By Jam Zohaib - Contact No.+92 312 7568870
-          </p>
+
+          {/* Single Row Credits */}
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center text-[10px]">
+
+            <span className="text-[#c2d5da]">
+              Marketing by Jam Zohaib
+            </span>
+
+            <span className="text-white/30">|</span>
+
+            {/* WhatsApp Contact */}
+            <a
+              href="https://wa.me/923043607000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#c2d5da] transition hover:text-[#25D366]"
+            >
+              +92 304 3607000
+            </a>
+
+            <span className="text-white/30">|</span>
+
+            {/* Developer Portfolio Link */}
+            <a
+              href="https://my-portfolio-pp6g9o52m-hasnain-ahmad.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Designed and developed by Hasnain Ahmad"
+              className="inline-flex items-center gap-1 font-semibold text-[#f1c744] transition duration-300 hover:text-white"
+            >
+              <span className="font-bold">{"</>"}</span>
+              <span>Designed & Developed by Hasnain Ahmad</span>
+              <span className="text-[9px]">↗</span>
+            </a>
+
+          </div>
         </div>
+
       </div>
     </footer>
   );

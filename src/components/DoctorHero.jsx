@@ -10,7 +10,7 @@ import {
   XCircle,
 } from "lucide-react";
 
-const API_URL = "http://localhost:5000/api/appointments";
+const API_URL = "https://guidance-hungry-tiger.abasthan.app/api/appointments";
 
 const initialFormData = {
   fullName: "",
